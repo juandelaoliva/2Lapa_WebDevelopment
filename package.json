@@ -15,7 +15,7 @@
   "author": "Cocomore AG",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "del": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.1",
@@ -28,7 +28,9 @@
     "gulp-hb": "^7.1.0",
     "gulp-imagemin": "^3.4.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-serve": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^1.0.4",
     "imagemin-pngquant": "^5.1.0",
     "susy": "^3.0.5"

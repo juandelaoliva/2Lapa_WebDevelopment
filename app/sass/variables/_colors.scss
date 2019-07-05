@@ -11,12 +11,16 @@ $primary-blue-2: #0066DA;
 $secondary-blue-2: #F5F8FD;
 $gray-color-1: #F4F4F4;
 
+//COCOMORE
+$cocomoreGreen : #07E2AD;
+$cocomoreLightGrey:#EFEDEA;
+
 // BLACK & WHITE
 $white: #FFFFFF;
 $black: #000000;
 
 // TEXT / FONT
-$text-blue-main: #11284E;
+$text-blue-main: $black;
 $text-blue-light: $primary-blue-1;
 $text-blue-dark: #0F1A2C;
 
@@ -25,3 +29,5 @@ $text-green-main: $primary-green-1;
 
 $text-black-main: $black;
 $text-white-main: $white;
+
+

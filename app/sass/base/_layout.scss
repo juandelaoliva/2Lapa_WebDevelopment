@@ -9,7 +9,14 @@ html {
   overflow-x: hidden;
 }
 
+body .master_container{
+  background-color: $white;
+   padding: 3%;
+   margin: 2%;
+ }
+
 body {
+  background-color: $cocomoreGreen;
   .coco-main__wrapper {
     max-width: $container-max-width;
     position: relative;

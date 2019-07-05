@@ -30,7 +30,7 @@
       overflow-y: auto;
       transform: translateY(-1000vh);
       transition: $transition-long;
-      background-color: $text-blue-main;
+      background-color: $cocomoreGreen;
 
       // Shows menu normally in desktop.
       @include size-l {

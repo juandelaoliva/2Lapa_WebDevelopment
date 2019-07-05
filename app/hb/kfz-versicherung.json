@@ -118,7 +118,7 @@
       "type": "AD19_FindInsurWiz_final",
       "content": {
         "from": "step-2-option-1",
-        "copy_text": "Final 2-1<br>Vollkasko Premium Tariff"
+        "copy_text": "Final 2-1<br>Vollkasko Premium Contact"
       }
     },
     {
@@ -127,7 +127,7 @@
       "type": "AD19_FindInsurWiz_final",
       "content": {
         "from": "step-2-option-2",
-        "copy_text": "Final 2-2<br>Vollkasko Komfort Tariff"
+        "copy_text": "Final 2-2<br>Vollkasko Komfort Contact"
       }
     },
     {
@@ -136,7 +136,7 @@
       "type": "AD19_FindInsurWiz_final",
       "content": {
         "from": "step-2-option-3",
-        "copy_text": "Final 2-3<br>Tellkasko Premium Tariff"
+        "copy_text": "Final 2-3<br>Tellkasko Premium Contact"
       }
     },
     {
@@ -145,7 +145,7 @@
       "type": "AD19_FindInsurWiz_final",
       "content": {
         "from": "step-2-option-4",
-        "copy_text": "Final 2-4<br>Haftpflicht Basis Tariff"
+        "copy_text": "Final 2-4<br>Haftpflicht Basis Contact"
       }
     },
     {

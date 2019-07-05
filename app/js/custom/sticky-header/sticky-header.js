@@ -2,11 +2,11 @@
 
 $(document).ready(function () {
     const header = $('header.header');
-    const shortcutsTariffButton = $('.shortcuts-tariff');
+    const shortcutsContactButton = $('.shortcuts-contact');
     const phoneIcon = $('.shortcuts-phone');
 
     // Initializing...
-    shortcutsTariffButton.hide();
+    shortcutsContactButton.hide();
 
     header.sticky(
         {
@@ -20,7 +20,7 @@ $(document).ready(function () {
         // hide the phone icon
         phoneIcon.hide();
 
-        shortcutsTariffButton.css('display', 'flex');
+        shortcutsContactButton.css('display', 'flex');
     });
 
     // Changes to elements when the header stops being sticky:
@@ -28,7 +28,7 @@ $(document).ready(function () {
         // show the phone icon
         phoneIcon.show();
 
-        shortcutsTariffButton.hide();
+        shortcutsContactButton.hide();
     });
 
     // This updates the sticky header on resize the window.

@@ -10,6 +10,7 @@ $menu-mobile-icon-margin: 21px;
 
   background-color: $white;
   z-index: 1;
+  border-top: 10px solid $cocomoreGreen;
 
   .main__container {
     @extend %grid__container;
@@ -33,6 +34,7 @@ $menu-mobile-icon-margin: 21px;
 
     .header-logo-wrapper {
       margin-right: $menu-mobile-icon-margin;
+      max-width: 240px;
 
       @include size-l {
         margin-right: 0;
@@ -58,7 +60,7 @@ $menu-mobile-icon-margin: 21px;
           display: none;
         }
 
-        &.shortcuts-tariff {
+        &.shortcuts-contact {
           @include font-size(8.8px);
           @include line-height(12px);
           @include font-open-sans-extrabold-italic;
@@ -162,7 +164,7 @@ $menu-mobile-icon-margin: 21px;
         @include font-size(20px);
         @include line-height(27px);
         @include font-open-sans-bold;
-        color: $text-green-main;
+        color: $black;
         text-align: right;
         display: none;
         height: 37px;

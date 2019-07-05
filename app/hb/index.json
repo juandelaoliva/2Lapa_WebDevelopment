@@ -1,6 +1,6 @@
 {
   "pageID": "index",
-  "pageTitle": "Homepage",
+  "pageTitle": "Web Development | Cocomore",
   "sections": [
     {
       "id": "AD19_StageTeaser-home",
@@ -9,27 +9,60 @@
       "content": {
         "position": "left desktop-right",
         "text_align": "text-left",
-        "header": "Günstige KFZ Versicherung",
-        "copy_text": "Berechnen Sie ihren individuellen Beitrag in nur 3 Minuten und sparen Sie bis zu 350 €",
+        "header": "Web Development Title",
+        "copy_text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
         "link": {
-          "text": "Berechnung starten",
+          "text": "Let's talk",
           "url": "#"
         },
         "image": {
           "sources": [
             {
-              "url": "/images/assets/header-mobile.png",
+              "url": "https://trello-attachments.s3.amazonaws.com/54ff5a0c49de12c6dce3bb5c/1600x1067/c6dc2940219033ff9b6620abc72a7b27/background.png",
               "media_query": "(max-width: 1023px)"
             },
             {
-              "url": "/images/assets/header-desktop.png",
+              "url": "https://trello-attachments.s3.amazonaws.com/54ff5a0c49de12c6dce3bb5c/1600x1067/c6dc2940219033ff9b6620abc72a7b27/background.png",
               "media_query": "(min-width: 1024px)"
             }
           ],
           "default": {
-            "url": "/images/assets/header-desktop.png"
+            "url": "https://trello-attachments.s3.amazonaws.com/54ff5a0c49de12c6dce3bb5c/1600x1067/c6dc2940219033ff9b6620abc72a7b27/background.png"
           }
         }
+      }
+    },
+    {
+      "id": "00Section_What we do",
+      "optional_classes": "",
+      "type": "AD19_ContactTeaser",
+      "content": {
+        "header": "What we do",
+        "tabs": [
+          {
+            "order": 3,
+            "header": "Lore ipsum",
+            "copy_text": "<h3>Tel: 02203 500216</h3><p><strong>Mo - Fr von 08:00 - 20:00 Uhr</strong><br>Im Schadenfall 24 Stunden für Sie da</p>",
+            "icon_url": "/images/assets/icon-profile-white.svg"
+          },
+          {
+            "order": 1,
+            "header": "Mein AdmiralDirekt",
+            "copy_text": "Jetzt einloggen und persönlich Kontakt aufnehmen",
+            "icon_url": "/images/assets/icon-profile-white.svg",
+          },
+          {
+            "order": 2,
+            "header": "Chat",
+            "copy_text": "Jetzt hier mit unseren Mitarbeitern in Kontakt treten",
+            "icon_url": "/images/assets/icon-profile-white.svg",
+            "link": {
+              "url": "#",
+              "text": "Chat starten",
+              "type": "link"
+            }
+          }
+        ]
       }
     },
     {

@@ -7,6 +7,11 @@
   color: $text-blue-main;
   text-align: center;
 
+  
+
+  // margin: 0 auto;
+  // padding: 40px 0 25px;
+
   display: flex;
 
   h2 {
@@ -106,5 +111,20 @@
         margin: 0 auto 12px auto;
       }
     }
+  }
+  @include size-l {
+    @include font-size(20px);
+    @include line-height(36px);
+
+    margin: 0 auto;
+    padding-top: 80px;
+
+    // @include susy-at($grid-12-30-desktop){
+    //   width: span(10 of 12);
+
+    //   .AD19_FactIcons_copy {
+    //     width: span(10);
+    //   }
+    // }
   }
 }
