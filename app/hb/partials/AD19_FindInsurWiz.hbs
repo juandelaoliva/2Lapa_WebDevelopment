@@ -1,0 +1,57 @@
+<section class="AD19_FindInsurWiz {{content.step}} {{#if content.optional_classes}}{{content.optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <div class="AD19_FindInsurWiz-content-wrapper">
+        <div class="AD19_FindInsurWiz-content">
+            <h2>{{content.header}}</h2>
+            <div class="AD19_FindInsurWiz-content__copy">
+                {{{content.copy_text}}}
+            </div>
+            <div class="AD19_FindInsurWiz-image">
+                {{#each content.options}}
+                    {{> 'AD19_FindInsurWiz_option' content=this.content step=../content.step}}
+                {{/each}}
+            </div>
+            {{#with content.link}}
+                <a class="AD19_FindInsurWiz-cta {{../content.step}}" href="{{url}}" {{#if target}}target="{{target}}"{{/if}} title="{{text}}">{{text}}</a>
+            {{/with}}
+        </div>
+    </div>
+</section>
+
+{{!
+
+Description:
+    Optional classes can be used to define full width, background-color and how the option elements should be displayed (as column or row)
+
+Find insurance wizard
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_FindInsurWiz",
+    "content": {
+        "header": "",
+        "copy_text": "",
+        "optional_classes": "(full-width) (bg-secondary-blue|bg-gray-color) content-column|content-row",
+        "step": "",
+        "options": [
+          {
+            "content": {
+              "option_id": "",
+              "image_option": "",
+              "option_text": ""
+            }
+          },
+          {},...
+        ],
+        "link": {
+          "text": "Weiter zu schritt",
+          "url": "http://link.to/somewhere",
+          "target": "_top"
+        }
+    }
+  ]
+}
+
+}}

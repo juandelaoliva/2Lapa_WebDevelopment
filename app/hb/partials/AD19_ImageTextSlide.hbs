@@ -1,0 +1,35 @@
+<section class="AD19_ImageTextSlide {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    {{#with content}}
+        {{#if image_url}}
+            <img src="{{image_url}}" {{#if image_alt}}alt=""{{/if}}>
+        {{/if}}
+        <blockquote>
+            {{quote}}
+        </blockquote>
+        <div class="AD19_ImageTextSlide__author">{{author}}</div>
+        <div class="AD19_ImageTextSlide__position"><strong>{{position}}</strong></div>
+    {{/with}}
+</section>
+
+{{!
+
+Description:
+
+Image/Text Slider
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_ImageTextSlide",
+    "content": {
+        "image_url": "http://link.to/image",
+        "image_alt": "Trusted shops guarantee",
+        "quote": "The testiomnial. Without quotation marks!!!",
+        "author": "A. Uthor, City",
+        "position": "KFZ Premium Vollkasko"
+    }
+}
+
+}}

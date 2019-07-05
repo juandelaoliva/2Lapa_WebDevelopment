@@ -1,0 +1,155 @@
+{
+  "images": [
+    {
+      "url": "https://dummyimage.com/75x113/e6e6e6/000000.png",
+      "text": "Stiftung Warentest",
+      "link": {
+        "url": "#"
+      }
+    },
+    {
+      "url": "https://dummyimage.com/75x113/e6e6e6/000000.png",
+      "text": "Focus Money",
+      "link": {
+        "url": "#"
+      }
+    },
+    {
+      "url": "https://dummyimage.com/75x113/e6e6e6/000000.png",
+      "text": "Nachhaltiges engagement",
+      "link": {
+        "url": "#"
+      }
+    }
+  ],
+  "socials": [
+    {
+      "title": "Folgen Sie uns auf Twitter",
+      "icon_url": "assets/icon-sm-tw.svg",
+      "link": {
+        "url": "https://twitter.com/admiraldirektde",
+        "target": "_blank"
+      }
+    },
+    {
+      "title": "Folgen Sie uns auf Facebook",
+      "icon_url": "assets/icon-sm-fb.svg",
+      "link": {
+        "url": "https://www.facebook.com/admiraldirekt.de/",
+        "target": "_blank"
+      }
+    },
+    {
+      "title": "Folgen Sie uns auf Youtube",
+      "icon_url": "assets/icon-sm-yt.svg",
+      "link": {
+        "url": "https://www.youtube.com/channel/UCCYBr5v2VQ5hj3-isi5ZzoA",
+        "target": "_blank"
+      }
+    }
+  ],
+  "texts": {
+    "social_media_heading": "Folgen Sie uns",
+    "copyright": "© AdmiralDirekt.de GmbH, eine Direktvertriebstochter der Itzehoer Versicherungen 2007 - 2019",
+    "awards": "Wir sind ausgezeichnet",
+    "links": [
+      {
+        "header": "Produkte",
+        "sublinks": [
+          {
+            "text": "Angebot berechnen",
+            "url": "#"
+          },
+          {
+            "text": "KFZ-Versicherungschutz",
+            "url": "#"
+          },
+          {
+            "text": "Zweitwagen versichern",
+            "url": "#"
+          },
+          {
+            "text": "Elektrauto versichern",
+            "url": "#"
+          },
+          {
+            "text": "Schutzbriefversicherung",
+            "url": "#"
+          },
+          {
+            "text": "Fahrerunfallversicherung",
+            "url": "#"
+          },
+          {
+            "text": "GreenNow",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "header": "AdmiralDirekt",
+        "sublinks": [
+          {
+            "text": "Über uns",
+            "url": "#"
+          },
+          {
+            "text": "Karriere",
+            "url": "#"
+          },
+          {
+            "text": "Presse",
+            "url": "#"
+          },
+          {
+            "text": "Impressum",
+            "url": "#"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "#"
+          },
+          {
+            "text": "Sitemap",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "header": "Services",
+        "sublinks": [
+          {
+            "text": "Mein AdmiralDirekt",
+            "url": "#"
+          },
+          {
+            "text": "Schaden melden",
+            "url": "#"
+          },
+          {
+            "text": "Kunden werben",
+            "url": "#"
+          },
+          {
+            "text": "Werkstattservice",
+            "url": "#"
+          },
+          {
+            "text": "Kontakt",
+            "url": "#"
+          },
+          {
+            "text": "Ratgeber",
+            "url": "#"
+          },
+          {
+            "text": "Downloads",
+            "url": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "logo_url": "assets/logo_white.svg",
+  "logo_alt": "AdmiralDirekt"
+}

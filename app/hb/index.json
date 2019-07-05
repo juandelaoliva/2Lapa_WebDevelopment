@@ -1,0 +1,364 @@
+{
+  "pageID": "index",
+  "pageTitle": "Homepage",
+  "sections": [
+    {
+      "id": "AD19_StageTeaser-home",
+      "optional_classes": "",
+      "type": "AD19_StageTeaser",
+      "content": {
+        "position": "left desktop-right",
+        "text_align": "text-left",
+        "header": "Günstige KFZ Versicherung",
+        "copy_text": "Berechnen Sie ihren individuellen Beitrag in nur 3 Minuten und sparen Sie bis zu 350 €",
+        "link": {
+          "text": "Berechnung starten",
+          "url": "#"
+        },
+        "image": {
+          "sources": [
+            {
+              "url": "/images/assets/header-mobile.png",
+              "media_query": "(max-width: 1023px)"
+            },
+            {
+              "url": "/images/assets/header-desktop.png",
+              "media_query": "(min-width: 1024px)"
+            }
+          ],
+          "default": {
+            "url": "/images/assets/header-desktop.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "AD19_FactIcons-example",
+      "optional_classes": "",
+      "type": "AD19_FactIcons",
+      "content": {
+        "header": "Unsere KFZ Versicherung bietet umfassenden Schutz",
+        "copy_text": "Egal ob Erstwagen oder Zweitwagenversicherung , Kfz-Haftpflicht oder Teilkaskoversicherung: profitieren Sie von dem ausgezeichneten Schutz von AdmiralDirekt.de.",
+        "icons": [
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Deckungssumme",
+            "copy_text": "100 Millionen Pauschal"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Personenschaden",
+            "copy_text": "Bis zu 15 Millionen"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Kaufpreisentschädigung",
+            "copy_text": "Bis zu 24 monate"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Deckungssumme",
+            "copy_text": "100 Millionen Pauschal"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Deckungssumme",
+            "copy_text": "100 Millionen Pauschal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AD19_TextHeadlineLevel2-component-graphics-placeholder",
+      "optional_classes": "",
+      "type": "AD19_TextHeadlineLevel2",
+      "content": {
+        "header": "Wir halten jedem Vergleich stand",
+        "copy_text": "Bei uns erhalten Sie exzellenten Versicherungsschutz zu günstigen Preisen. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur."
+      }
+    },
+    {
+      "id": "AD19_TextHeadlineLevel2-unsere-tarife",
+      "optional_classes": "",
+      "type": "AD19_TextHeadlineLevel2",
+      "content": {
+        "header": "Unsere Tarife im Überblick",
+        "copy_text": "Egal ob Erstwagen oder Zweitwagenversicherung, Kfz-Haftpflicht oder Teilkaskoversicherung: profitieren Sie von dem ausgezeichneten Schutz von AdmiralDirekt.de."
+      }
+    },
+    {
+      "id": "AD19_ProductTitleSlider-example",
+      "optional_classes": "",
+      "type": "AD19_ProductTitleSlider",
+      "content": {
+        "slides": [
+          {
+            "image_url": "images/assets/symbol-product-basis.png",
+            "header": "Basis",
+            "copy_text": "Damit fahren Sie sicher!<br>Die wichtigsten Schadensfälle sind abgedeckt",
+            "link": {
+              "url": "http://example.com",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "image_url": "images/assets/symbol-product-komfort.png",
+            "header": "Komfort",
+            "copy_text": "Darf es doch etwas mehr sein?<br>75% unserer Kunden wählen den Komfort Tarif.",
+            "badge_text": "Unser Bestseller",
+            "link": {
+              "url": "http://example.com",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "image_url": "images/assets/symbol-product-premium.png",
+            "header": "Premium",
+            "copy_text": "Der umfassendste Schutz mit vielen Zusatzleistungen",
+            "link": {
+              "url": "http://example.com",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "AD19_CloseTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_CloseTeaser",
+      "content": {
+        "icon_url": "images/assets/symbol-calculator.png",
+        "copy_text": "Berechen Sie jetzt ihren KFZ Beitrag",
+        "button": {
+          "text": "Zum Tarifrechner",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "AD19_TextHeadlineLevel2-no-link",
+      "optional_classes": "",
+      "type": "AD19_TextHeadlineLevel2",
+      "content": {
+        "header": "Bei uns sind sie richtig",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur."
+      }
+    },
+    {
+      "id": "AD19_TextTeaserComb_1",
+      "optional_classes": "",
+      "type": "AD19_TextTeaserComb",
+      "content": {
+        "image_url": "https://dummyimage.com/600x400/000/fff",
+        "category": "Wartung, Inspecktion",
+        "header": "Flächendeckendes Werkstattnetz mit umfassenden Serviceleistungen",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "layout": "image-left",
+        "link": {
+          "text": "Klick hier!",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "AD19_TextTeaserComb_2",
+      "optional_classes": "",
+      "type": "AD19_TextTeaserComb",
+      "content": {
+        "image_url": "https://dummyimage.com/600x400/000/fff",
+        "category": "Wartung, Inspecktion",
+        "header": "Bei uns versichern Sie ihren Zweitwagen am günstigsten",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "layout": "image-right",
+        "link": {
+          "text": "Klick hier!",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "AD19_TextTeaserComb_3",
+      "optional_classes": "",
+      "type": "AD19_TextTeaserComb",
+      "content": {
+        "image_url": "https://dummyimage.com/600x400/000/fff",
+        "category": "Wartung, Inspecktion",
+        "header": "So erreichen Sie uns",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "layout": "image-left",
+        "link": {
+          "text": "Klick hier!",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "AD19_ImageTextSlider-example",
+      "optional_classes": "",
+      "type": "AD19_ImageTextSlider",
+      "content": {
+        "slides": [
+          {
+            "image_url": "https://dummyimage.com/127x129/000/fff.png",
+            "image_alt": "Trusted shops guarantee",
+            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+            "author": "Benjamin K, Köln",
+            "position": "KFZ Premium Vollkasko"
+          },
+          {
+            "image_url": "https://dummyimage.com/127x129/000/fff.png",
+            "image_alt": "Trusted shops guarantee",
+            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+            "author": "Benjamin K, Köln",
+            "position": "KFZ Premium Vollkasko"
+          },
+          {
+            "image_url": "https://dummyimage.com/127x129/000/fff.png",
+            "image_alt": "Trusted shops guarantee",
+            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+            "author": "Benjamin K, Köln",
+            "position": "KFZ Premium Vollkasko"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AD19_TextHeadlineLevel2-with-link",
+      "optional_classes": "",
+      "type": "AD19_TextHeadlineLevel2",
+      "content": {
+        "header": "Unser Ratgeber hilft Ihnen in jeder Lebenslage",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet.",
+        "link": {
+          "text": "Zum Ratgeber",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "AD19_ArticleTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_ArticleTeaser",
+      "content": {
+        "slides": [
+          {
+            "category": "Kategorie",
+            "header": "Meine erste Kfz-Versicherung",
+            "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.",
+            "image_url": "https://dummyimage.com/350x350/000/fff.png",
+            "button": {
+              "url": "#",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "category": "Kategorie",
+            "header": "Tipps für die Urlaubsfahrt",
+            "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.",
+            "image_url": "https://dummyimage.com/350x350/000/fff.png",
+            "button": {
+              "url": "#",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "category": "Kategorie",
+            "header": "Checkliste für den Frühjahrsputz",
+            "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.",
+            "image_url": "https://dummyimage.com/350x350/000/fff.png",
+            "button": {
+              "url": "#",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "AD19_CloseTeaser-example-2",
+      "optional_classes": "",
+      "type": "AD19_CloseTeaser",
+      "content": {
+        "icon_url": "images/assets/symbol-calculator.png",
+        "copy_text": "Berechen Sie jetzt ihren KFZ Beitrag",
+        "button": {
+          "text": "Zum Tarifrechner",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "AD19_ContactTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_ContactTeaser",
+      "content": {
+        "header": "Sie haben doch noch offene Fragen?<br>Wir sind für Sie da!",
+        "tabs": [
+          {
+            "order": 3,
+            "header": "Telefon",
+            "copy_text": "<h3>Tel: 02203 500216</h3><p><strong>Mo - Fr von 08:00 - 20:00 Uhr</strong><br>Im Schadenfall 24 Stunden für Sie da</p>",
+            "icon_url": "/images/assets/icon-profile-white.svg"
+          },
+          {
+            "order": 1,
+            "header": "Mein AdmiralDirekt",
+            "copy_text": "Jetzt einloggen und persönlich Kontakt aufnehmen",
+            "icon_url": "/images/assets/icon-profile-white.svg",
+            "link": {
+              "url": "#",
+              "text": "Login",
+              "type": "button"
+            }
+          },
+          {
+            "order": 2,
+            "header": "Chat",
+            "copy_text": "Jetzt hier mit unseren Mitarbeitern in Kontakt treten",
+            "icon_url": "/images/assets/icon-profile-white.svg",
+            "link": {
+              "url": "#",
+              "text": "Chat starten",
+              "type": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "AD19_AboutTeaser-home",
+      "optional_classes": "",
+      "type": "AD19_AboutTeaser",
+      "content": {
+        "image": {
+          "sources": [
+            {
+              "url": "https://dummyimage.com/350x230/e6e6e6/000000.png",
+              "media_query": "(max-width: 1023px)"
+            },
+            {
+              "url": "https://dummyimage.com/1440x500/e6e6e6/000000.png",
+              "media_query": "(min-width: 1024px)"
+            }
+          ],
+          "default": {
+            "url": "https://dummyimage.com/1440x500/e6e6e6/000000.png"
+          }
+        },
+        "header": "Über Admiral Direkt",
+        "copy_text": "Wer sind wir und was machen wir eigentlich?<br>Erfahren Sie mehr über un Hier steht noch mehr über das, was Admiral Direkt so besonders macht. Am besten noch einige Vorteile.",
+        "link": {
+          "text": "Lerne uns kennen",
+          "url": "#"
+        }
+      }
+    }
+  ]
+}

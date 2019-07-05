@@ -1,0 +1,42 @@
+<div class="AD19_ProductTitleSlide {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    {{#with content}}
+        <a href="{{link.url}}" {{#if link.target}}target="{{link.target}}"{{/if}}>
+            {{#if image_url}}
+                <img src="{{image_url}}" alt="{{header}}">
+            {{/if}}
+            <h2>{{header}}</h2>
+            <span class="AD19_ProductTitleSlide_copy">{{{copy_text}}}</span>
+            <span class="cta">{{link.text}}</span>
+            {{#if badge_text}}
+                <span class="badge_text">{{badge_text}}</span>
+            {{/if}}
+        </a>
+    {{/with}}
+</div>
+
+{{!
+
+Description:
+
+Product Title Slide
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_ProductTitleSlide",
+    "content": {
+        "image_url": "http://link.to/image", (optional)
+        "header": "Basis",
+        "copy_text": "Lorem ipsum dolor sit",
+        "badge_text": "Bestseller" (optional)
+        "link": {
+            "url": "http://example.com",
+            "text": "Klick hier!",
+            "target": "_top"
+        }
+    }
+}
+
+}}

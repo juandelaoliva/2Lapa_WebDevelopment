@@ -1,0 +1,133 @@
+.AD19_FactIcons {
+  @extend %grid__container;
+  @extend %grid__container-padding;
+
+  @include font-size(16px);
+  @include line-height(28px);
+  color: $text-blue-main;
+  background-color: $white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 40px 0 25px;
+
+  h2 {
+    width: 85%;
+    @include heading-light-medium;
+    margin: 0 auto 24px auto;
+
+    @include size-l {
+      @include font-size(40px);
+      @include line-height(55px);
+      max-width: 70%;
+    }
+  }
+
+  .AD19_FactIcons_copy {
+    margin: 0;
+    width: 90%;
+  }
+
+  ul {
+    margin: 30px 0;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+
+    @include size-l {
+      flex-wrap: nowrap;
+      margin: 60px 0;
+    }
+
+    li {
+      @include heading-bold-italic(16px, 18px);
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      word-wrap: break-word;
+
+      margin: 30px 8px;
+      width: 40%;
+      min-width: 150px;
+      min-height: 122px;
+      padding: 0;
+
+      @include size-m {
+        width: 30%;
+      }
+
+      @include size-l {
+        @include line-height(24px);
+        margin: 0 8px;
+        width: auto;
+        min-width: 136px;
+        min-height: 141px;
+
+        // Not using the shorthand version to avoid issues on IE
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+      }
+
+      @include size-xl {
+        min-width: 185px;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55px;
+        height: auto;
+        margin-bottom: 15px;
+
+        @include size-l {
+          margin-bottom: 20px;
+        }
+      }
+
+      h3 {
+        @include font-size(10px);
+        @include line-height(14px);
+        color: $primary-blue-1;
+        font-style: normal;
+        margin-bottom: 8px;
+        min-height: 28px;
+
+        @include size-l {
+          @include font-size(12px);
+          @include line-height(17px);
+          min-height: 34px;
+        }
+      }
+    }
+  }
+
+  @include size-l {
+    @include font-size(20px);
+    @include line-height(36px);
+
+    margin: 0 auto;
+    padding-top: 80px;
+
+    @include susy-at($grid-12-30-desktop){
+      width: span(10 of 12);
+
+      .AD19_FactIcons_copy {
+        width: span(10);
+      }
+    }
+  }
+}

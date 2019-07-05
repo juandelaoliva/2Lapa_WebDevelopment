@@ -1,0 +1,223 @@
+$menu-height-mobile: 54px;
+$menu-height-desktop: 114px;
+$menu-icons-size: 28px;
+$menu-mobile-quicklinks-height: 62px;
+$menu-mobile-quicklinks-margin-bottom: 31px;
+$menu-mobile-icon-margin: 21px;
+
+.header {
+  @include clearfix();
+
+  background-color: $white;
+  z-index: 1;
+
+  .main__container {
+    @extend %grid__container;
+    @extend %grid__container-padding;
+    height: $menu-height-mobile;
+
+    @include size-l {
+      height: $menu-height-desktop;
+    }
+
+    @include size-xl {
+      padding: 0;
+    }
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    .header-logo-wrapper {
+      margin-right: $menu-mobile-icon-margin;
+
+      @include size-l {
+        margin-right: 0;
+
+        img {
+          min-width: 230px;
+        }
+      }
+
+      @include size-xl {
+        img {
+          min-width: 293px;
+          margin-left: 15px;
+          margin-right: 70px;
+        }
+      }
+    }
+
+    #header-shortcuts, .mobile_menu_actions {
+      a {
+        display: inline-block;
+        span:not(#mobile_menu_trigger) {
+          display: none;
+        }
+
+        &.shortcuts-tariff {
+          @include font-size(8.8px);
+          @include line-height(12px);
+          @include font-open-sans-extrabold-italic;
+          background-color: $text-lightgreen;
+          color: $white;
+          height: $menu-height-mobile;
+          width: 65px;
+          margin-right: 13px;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          @include size-l {
+            @include font-size(16px);
+            @include line-height(22px);
+            @include font-open-sans-bold;
+            width: 100%;
+            margin: -5px 0 5px 25px;
+            height: 37px;
+            justify-content: center;
+          }
+
+          span {
+            display: inline !important;
+          }
+        }
+
+        &.shortcuts-profile {
+          display: inline-block;
+          width: $menu-icons-size;
+          height: $menu-icons-size;
+          background: url("../images/assets/icon-profile-dark_blue.svg") center center no-repeat;
+          margin-right: $menu-mobile-icon-margin;
+
+          @include size-l {
+            margin-right: 0;
+            margin-left: 40px;
+            order: 1;
+          }
+
+          span {
+            display: none;
+          }
+        }
+
+        &.shortcuts-search {
+          display: none;
+          width: $menu-icons-size;
+          height: $menu-icons-size;
+          background: url("../images/assets/icon-search-dark_blue.svg") center center no-repeat;
+
+          @include size-l {
+            display: inline-block;
+            order: 1;
+          }
+
+          span {
+            display: none;
+          }
+        }
+
+        &.shortcuts-phone {
+          display: inline-block;
+          width: $menu-icons-size;
+          height: $menu-icons-size;
+          background: url("../images/assets/icon-phone-dark_blue.svg") center center no-repeat;
+          margin-right: $menu-mobile-icon-margin;
+
+          span {
+            display: none;
+          }
+
+          @include size-l {
+            display: none !important;
+          }
+        }
+
+        &.shortcuts-menu-trigger {
+          span#mobile_menu_trigger {
+            display: inline-block;
+            width: $menu-icons-size;
+            height: $menu-icons-size;
+            background: url('../images/assets/icon-burguer-menu-dark_blue.svg') center center no-repeat;
+            cursor: pointer;
+            position: relative;
+            z-index: 50;
+
+            &.mobile-open {
+              background-image: url('../images/assets/icon-close-menu-white.svg');
+            }
+
+            @include size-l {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .shortcuts-phone-text {
+        @include font-size(20px);
+        @include line-height(27px);
+        @include font-open-sans-bold;
+        color: $text-green-main;
+        text-align: right;
+        display: none;
+        height: 37px;
+
+        @include size-l {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+
+      .shortcuts-mobile-wrapper {
+        display: inline-block;
+        @include size-l {
+          display: none;
+        }
+      }
+    }
+
+    #header-shortcuts {
+      display: flex;
+      align-items: center;
+
+      @include size-l {
+        height: $menu-height-desktop;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+
+        width: 22%;
+      }
+    }
+
+    .mobile_menu_actions {
+      a.shortcuts-search {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// Hide shortcuts-phone-text when sticky.
+.sticky-wrapper {
+  &.is-sticky {
+    .header {
+      .main__container {
+        #header-shortcuts {
+          .shortcuts-phone-text {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

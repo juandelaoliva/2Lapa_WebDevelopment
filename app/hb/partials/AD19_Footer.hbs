@@ -1,0 +1,117 @@
+<footer class="AD19_Footer">
+    {{#with footer}}
+
+        {{! Content }}
+        <div class="AD19_Footer_content">
+
+            {{! Socials }}
+            <div class="AD19_Footer_content_socials">
+                <h2>{{texts.social_media_heading}}</h2>
+                <ul>
+                    {{#each socials}}
+                        <li>
+                            <a href="{{this.link.url}}" target="{{this.link.target}}" title="{{this.title}}">
+                                <img src="{{img_url this.icon_url}}" alt="{{this.title}}">
+                            </a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            {{! Links }}
+            {{#each texts.links as |column|}}
+            <div class="AD19_Footer_content_links">
+                <h2>{{column.header}}</h2>
+                <ul>
+                    {{#each column.sublinks as |link|}}
+                        <li>
+                            <a href="{{link.url}}" {{#if link.target}}target="{{link.target}}"{{/if}}>{{link.text}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+            {{! Award images }}
+            <div class="AD19_Footer_content_awards">
+                <h2>{{texts.awards}}</h2>
+                <div class="AD19_Footer_content_awards-image-wrapper">
+                    {{#each images}}
+                    <a {{#if this.link.url}}href="{{this.link.url}}"{{/if}} {{#if this.link.target}}target="{{this.link.target}}"{{/if}}>
+                        <img src="{{this.url}}" alt="{{this.text}}">
+                    </a>
+                    {{/each}}
+                </div>
+            </div>
+
+            {{! Footer copyright text }}
+            <div class="AD19_Footer_copyright_text">
+                <p>{{{texts.copyright}}}</p>
+            </div>
+
+            {{! Footer logo }}
+            <div class="AD19_Footer_logo">
+                <img src="{{img_url logo_url}}" alt="{{logo_alt}}">
+            </div>
+        </div>
+    {{/with}}
+</footer>
+
+{{!
+
+Description:
+
+Footer
+
+Json usage:
+
+{
+  "images": [ // The images under the awards column
+    {
+      "url": "http://lorempixel.com/output/technics-q-c-100-100-4.jpg",
+      "text": "Lorem ipsum",
+      "link": { // optional
+        "url": "#",
+        "target": "_top" // optional
+      }
+    }
+  ],
+  "socials": [ // Social media pages
+    {
+      "title": "Instagram",
+      "icon_url": "images/footer/instagram.svg",
+      "link": {
+        "url": "#",
+        "target": "_blank" // optional but recommended in the case of te social media links
+      }
+    }
+  ],
+  "texts": {
+    "social_media_heading": "Follow us!",
+    "copyright": "© AdmiralDirekt.de GmbH",
+    "awards": "We are distinguished",
+    "links": [ // All other footer columns/sections
+      {
+        "header": "Column 1",
+        "sublinks": [
+          {
+            "text": "Lorem ipsum",
+            "url": "#",
+            "target": "_top" // optional
+          }
+        ]
+      },
+      {
+        "header": "Column n",
+        "sublinks": [
+          {
+            "text": "Lorem ipsum",
+            "url": "#",
+            "target": "_top" // optional
+          }
+        ]
+      }
+    ]
+  }
+}
+
+}}

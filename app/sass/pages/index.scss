@@ -1,0 +1,11 @@
+// File for setting specific styles for index page
+
+#AD19_StageTeaser-home + .AD19_FactIcons {
+    background-color: $white;
+    position: relative;
+    margin-top: -50px;
+
+  @include size-xl {
+    margin-top: -130px;
+  }
+}

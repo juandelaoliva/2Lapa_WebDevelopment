@@ -1,0 +1,68 @@
+.content-hero-image {
+  position: relative;
+  width: 100%;
+
+  .hero-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .hero-content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+
+    /** default margin for the content */
+    margin: 20px;
+
+    .hero-content {
+      h1 {
+        @include line-height(20px);
+        @include font-size(20px);
+        margin: 0;
+
+        @include size-l {
+          @include line-height(50px);
+          @include font-size(50px);
+        }
+      }
+
+      p {
+        @include line-height(20px);
+        @include font-size(15px);
+        margin: 0;
+
+        @include size-l {
+          @include line-height(20px);
+          @include font-size(15px);
+        }
+      }
+      a {
+        @include font-size(15px);
+      }
+    }
+
+    .hero-content.left {
+      align-self: flex-start;
+    }
+    .hero-content.center {
+      align-self: center;
+    }
+    .hero-content.right {
+      align-self: flex-end;
+    }
+
+    .hero-content.text-left {
+      text-align: left;
+    }
+    .hero-content.text-center {
+      text-align: center;
+    }
+    .hero-content.text-right {
+      text-align: right;
+    }
+  }
+}

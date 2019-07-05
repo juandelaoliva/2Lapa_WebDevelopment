@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+{{#> AD19_Header}}
+head not there
+{{/AD19_Header}}
+
+<body>
+<header class="header" role="banner">
+    <div class="main__container">
+
+        {{#> navigation-main active_navpoint=true}}
+        navigation-main not found
+        {{/navigation-main}}
+
+    </div>
+</header>
+
+<div class="coco-main__wrapper">
+    <main class="main main--sub" role="main">
+        <div class="main__container">
+
+            {{#each sections}}
+            {{> (lookup . 'type') }}
+            {{/each}}
+
+        </div>
+    </main>
+</div>
+
+{{#> AD19_Footer}}
+footer not found
+{{/AD19_Footer}}
+</body>
+
+</html>

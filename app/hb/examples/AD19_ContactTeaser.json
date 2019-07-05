@@ -1,0 +1,54 @@
+{
+  "pageID": "AD19_ContactTeaser",
+  "pageTitle": "AD19_ContactTeaser",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_ContactTeaser",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_ContactTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_ContactTeaser",
+      "content": {
+        "header": "Sie haben doch noch offene Fragen?<br>Wir sind für Sie da!",
+        "tabs": [
+          {
+            "order": 3,
+            "header": "Telefon",
+            "copy_text": "<h3>Tel: 02203 500216</h3><p><strong>Mo - Fr von 08:00 - 20:00 Uhr</strong><br>Im Schadenfall 24 Stunden für Sie da</p>",
+            "icon_url": "../images/assets/icon-phone-black.svg"
+          },
+          {
+            "order": 1,
+            "header": "Mein AdmiralDirekt",
+            "copy_text": "Jetzt einloggen und persönlich Kontakt aufnehmen",
+            "icon_url": "../images/assets/icon-profile-black.svg",
+            "link": {
+              "url": "#",
+              "text": "Login",
+              "type": "button"
+            }
+          },
+          {
+            "order": 2,
+            "header": "Chat",
+            "copy_text": "Jetzt hier mit unseren Mitarbeitern in Kontakt treten",
+            "icon_url": "../images/assets/icon-chat-black.svg",
+            "link": {
+              "url": "#",
+              "text": "Chat starten",
+              "type": "link"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "pageID": "AD19_FloatingButton",
+  "pageTitle": "AD19_FloatingButton",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_FloatingButton",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_FloatingButton-example",
+      "optional_classes": "",
+      "type": "AD19_FloatingButton",
+      "content": {
+        "text": "Chatbot"
+      }
+    }
+  ]
+}

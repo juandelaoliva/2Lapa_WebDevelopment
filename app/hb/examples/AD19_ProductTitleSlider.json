@@ -1,0 +1,56 @@
+{
+  "pageID": "AD19_ProductTitleSlider",
+  "pageTitle": "AD19_ProductTitleSlider",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_ProductTitleSlider",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_ProductTitleSlider-example",
+      "optional_classes": "",
+      "type": "AD19_ProductTitleSlider",
+      "content": {
+        "slides": [
+          {
+            "image_url": "../images/assets/symbol-product-basis.png",
+            "header": "Basis",
+            "copy_text": "<p>Damit fahren Sie sicher!<br>Die wichtigsten Schadensfälle sind abgedeckt</p>",
+            "link": {
+              "url": "http://example.com",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "image_url": "../images/assets/symbol-product-komfort.png",
+            "header": "Komfort",
+            "copy_text": "<p>Darf es doch etwas mehr sein?<br>75% unserer Kunden wählen den Komfort Tarif.</p>",
+            "badge_text": "Unser Bestseller",
+            "link": {
+              "url": "http://example.com",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "image_url": "../images/assets/symbol-product-premium.png",
+            "header": "Premium",
+            "copy_text": "<p>Der umfassendste Schutz mit vielen Zusatzleistungen</p>",
+            "link": {
+              "url": "http://example.com",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

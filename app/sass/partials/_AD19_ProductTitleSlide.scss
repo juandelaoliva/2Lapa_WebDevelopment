@@ -1,0 +1,139 @@
+.AD19_ProductTitleSlide {
+  text-align: center;
+  position: relative;
+  display: flex;
+  margin: 20px auto 20px auto;
+
+  background-color: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.24);
+
+  width: 95%;
+  min-width: 282px;
+  height: auto;
+  min-height: 442px;
+
+  @include size-l {
+    min-height: 545px;
+    margin-bottom: 60px;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    // text styles
+    @include font-size(14px);
+    @include line-height(26px);
+    color: $text-blue-main;
+
+    @include size-l {
+      @include font-size(16px);
+      @include line-height(30px);
+    }
+
+    h2 {
+      @include heading-bold-italic(24px, 28px);
+      @include line-height(33px);
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+
+      @include size-l {
+        @include line-height(38px);
+        margin-bottom: 24px;
+      }
+    }
+
+    .AD19_ProductTitleSlide_copy {
+      min-height: 78px;
+      display: block;
+    }
+
+    // CTA styles
+    span.cta {
+      display: inline-block;
+
+      @include font-size(15px);
+      @include line-height(15px);
+      font-weight: bold;
+
+      background-color: $text-lightgreen;
+      color: $white;
+      margin: 40px auto;
+      padding: 15px 40px;
+      //max-width: span(2 wide);
+      position: relative;
+
+      // setting rounded sides
+      border-top-left-radius: 100% 1000px;
+      border-bottom-left-radius: 100% 1000px;
+      border-top-right-radius: 100% 1000px;
+      border-bottom-right-radius: 100% 1000px;
+    }
+  }
+
+  span.badge_text {
+    display: inline-block;
+    padding: 18px 0 0 67px;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: transparent;
+    color: $primary-blue-1;
+    z-index: 2;
+    margin: 0 auto;
+
+    // setting font styles
+    @include font-size(12px);
+    @include line-height(17px);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include size-l {
+      @include font-size(16px);
+      @include line-height(22px);
+
+      padding-top: 30px;
+      padding-left: 80px;
+    }
+
+    &:before {
+      content: '';
+      background: $primary-blue-1 url('/images/assets/icon-star-white.svg') center no-repeat;
+      background-size: 36px 36px;
+      width: 67px;
+      height: 70px;
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      top: -10px;
+
+      // setting rounded bottom side
+      border-bottom-left-radius: 100% 25px;
+      border-bottom-right-radius: 100% 25px;
+
+      @include size-l {
+        width: 96px;
+        height: 100px;
+        background-size: 40px 40px;
+      }
+    }
+  }
+
+  img {
+    width: 120.2px;
+    height: 120px;
+    margin: 75px auto 30px;
+
+    @include size-l {
+      margin-top: 80px;
+    }
+  }
+}

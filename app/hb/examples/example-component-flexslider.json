@@ -1,0 +1,68 @@
+{
+  "pageID": "example-component-flexslider",
+  "pageTitle": "Example FlexSlider",
+  "sections": [
+    {
+      "id": "example-component-flexslider_content-headline-primary",
+      "optional_classes": "",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "Example component FlexSlider",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "example-component-flexslider_full",
+      "optional_classes": "",
+      "type": "component-flexslider",
+      "content": {
+        "slides": [
+          {
+            "partial": "flexslider/flexslider_HTMLContent",
+            "slide": {
+              "type": "flexslider_HTMLContent",
+              "content": {
+                "html_content": "<h3>The HTML content for the slide</h3><p>This is <strong>strong</strong> content!"
+              }
+            }
+          },
+          {
+            "partial": "flexslider/flexslider_Image",
+            "caption": "Caption slide #2",
+            "slide": {
+              "type": "flexslider_Image",
+              "content": {
+                "image_url": "https://dummyimage.com/500x300/000/ffffff.png&text=1"
+              }
+            }
+          },
+          {
+            "partial": "AD19_ImageTextSlide",
+            "slide": {
+              "id": "AD19_ImageTextSlide_slide_1",
+              "optional_classes": "",
+              "type": "AD19_ImageTextSlide",
+              "content": {
+                "image_url": "https://dummyimage.com/127x129/000/fff.png",
+                "image_alt": "Trusted shops guarantee",
+                "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+                "author": "Benjamin K, Köln",
+                "position": "KFZ Premium Vollkasko"
+              }
+            }
+          },
+          {
+            "partial": "flexslider/flexslider_HTMLContent",
+            "caption": "Caption slide #4",
+            "slide": {
+              "type": "flexslider_HTMLContent",
+              "content": {
+                "html_content": "<h3>Content #4</h3><p>Lorem ipsum</p>"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

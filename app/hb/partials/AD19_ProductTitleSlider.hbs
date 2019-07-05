@@ -1,0 +1,49 @@
+<section class="AD19_ProductTitleSlider">
+    <div class="flexslider {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}">
+        <ul class="slides">
+            {{#each content.slides}}
+                <li {{#if this.badge_text}}class="is_badge"{{/if}}>
+                    {{! The slide is a partial to be rendered }}
+                    {{> 'AD19_ProductTitleSlide' content=this}}
+
+                    {{! The caption, if exists }}
+                    {{#if this.caption}}
+                        <p class="flex-caption">{{this.caption}}</p>
+                    {{/if}}
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+
+{{!
+
+Description:
+
+Product Title Slider. Each slide has a AD19_ProductTitleSlide component.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_ProductTitleSlider",
+    "content": {
+        "slides": [
+            {
+                "image_url": "http://link.to/image", (optional)
+                "header": "Basis",
+                "copy_text": "Lorem ipsum dolor sit",
+                "badge_text": "Bestseller" (optional)
+                "link": {
+                    "url": "http://example.com",
+                    "text": "Klick hier!",
+                    "target": "_top"
+                }
+            },
+            {}, ...
+        ]
+    }
+}
+
+}}

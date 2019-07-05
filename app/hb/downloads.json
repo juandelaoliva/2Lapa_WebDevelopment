@@ -1,0 +1,14 @@
+{
+  "pageID": "downloads",
+  "pageTitle": "Downloads",
+  "sections": [
+    {
+      "id": "section-downloads",
+      "optional_classes": "",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "Downloads"
+      }
+    }
+  ]
+}

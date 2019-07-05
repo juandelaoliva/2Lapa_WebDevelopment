@@ -1,0 +1,48 @@
+{
+  "pageID": "AD19_TextTeaserComb",
+  "pageTitle": "AD19_TextTeaserComb",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_TextTeaserComb",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_TextTeaserComb-example",
+      "optional_classes": "",
+      "type": "AD19_TextTeaserComb",
+      "content": {
+        "image_url": "https://dummyimage.com/350/e6e6e6/000000.png",
+        "header": "Flächendeckendes Werkstattnetz mit umfassenden Serviceleistungen",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet.",
+        "layout": "image-left",
+        "link": {
+          "text": "Klick hier!",
+          "url": "http://link.to/content",
+          "target": "_top"
+        }
+      }
+    },
+        {
+      "id": "AD19_TextTeaserComb-example",
+      "optional_classes": "",
+      "type": "AD19_TextTeaserComb",
+      "content": {
+        "image_url": "https://dummyimage.com/350/e6e6e6/000000.png",
+        "header": "Flächendeckendes Werkstattnetz mit umfassenden Serviceleistungen",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet.",
+        "layout": "image-right",
+        "link": {
+          "text": "Klick hier!",
+          "url": "http://link.to/content",
+          "target": "_top"
+        }
+      }
+    }
+  ]
+}

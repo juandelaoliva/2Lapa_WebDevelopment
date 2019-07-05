@@ -1,0 +1,251 @@
+.menu {
+  @extend %grid__container;
+  @extend %grid__container-padding;
+
+  .nav {
+    position: relative;
+    z-index: 50;
+    margin: 0;
+
+    &:after {
+      content: '';
+      width: 30px;
+      height: 100%;
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+    }
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      overflow-y: auto;
+      transform: translateY(-1000vh);
+      transition: $transition-long;
+      background-color: $text-blue-main;
+
+      // Shows menu normally in desktop.
+      @include size-l {
+        position: relative;
+        width: auto;
+        height: auto;
+        top: auto;
+        left: auto;
+        overflow-y: inherit;
+        transform: translateY(0);
+        background: transparent;
+
+        // Hide the actions in desktop.
+        .mobile_menu_actions {
+          display: none;
+        }
+      }
+
+      &.mobile-open {
+        display: block;
+        transform: translateY(0);
+        transition: $transition-long;
+
+        .mobile_menu_actions {
+          height: $menu-height-mobile;
+          justify-content: space-between;
+
+          @extend %grid__container;
+          @extend %grid__container-padding;
+
+          .shortcuts-profile {
+            margin-right: $menu-icons-size + $menu-mobile-icon-margin;
+            background-image: url("../images/assets/icon-profile-white.svg");
+          }
+
+          .shortcuts-search {
+            background-image: url("../images/assets/icon-search-white.svg");
+          }
+
+          #mobile_menu_trigger {
+          }
+        }
+      }
+
+      .nav_items {
+        margin: 0;
+        padding: 0 10%;
+        width: auto;
+        height: calc(100vh - #{$menu-height-mobile} - #{$menu-mobile-quicklinks-height} - #{$menu-mobile-quicklinks-margin-bottom});
+
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-around; // Fallback for IE11 and Edge, as they don't support "space-evenly"
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        > .nav_items_primary, > .nav_items_secondary {
+          @extend %grid__container;
+          @extend %grid__container-padding;
+          @include font-open-sans-light;
+          font-size: 6vmin;
+          line-height: 1.2;
+
+          flex-direction: column;
+          align-items: flex-start;
+          width: span(6);
+
+          .nav_item {
+            margin-bottom: 1em;
+
+            a {
+              text-decoration: none;
+              display: block;
+              color: $text-white-main;
+              border-bottom: 2px solid transparent;
+
+              &:hover {
+                border-bottom-color: $text-white-main;
+              }
+            }
+
+            &.nav_item--desktop {
+              display: none;
+            }
+
+            &.nav_item--active {
+              a {
+                border-bottom: 2px solid $text-white-main;
+              }
+            }
+          }
+        }
+
+        > .nav_items_primary {
+          @include font-open-sans-bold;
+        }
+      }
+
+      .nav_quicklinks {
+        height: $menu-mobile-quicklinks-height;
+        margin-bottom: $menu-mobile-quicklinks-margin-bottom;
+        @extend %grid__container;
+        @extend %grid__container-padding;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+
+        a {
+          color: $text-white-main;
+          text-decoration: none;
+          margin-left: 1em;
+          @include font-open-sans-light;
+          font-size: 4vmin;
+          line-height: 1.7;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include size-l {
+  .menu {
+    height: $menu-height-desktop;
+    padding: 0;
+    .nav {
+      .menu-container {
+
+        // reset styles from mobile rules
+        position: static;
+        width: auto;
+        height: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        overflow: visible;
+        transform: none;
+        z-index: auto;
+
+        .nav_items {
+          // reset styles from mobile rules
+          display: block;
+          flex-direction: column;
+          height: auto;
+          width: 115%;
+          padding: 0;
+
+          > .nav_items_primary, > .nav_items_secondary {
+            @include font-open-sans-bold;
+            @include font-size(16px);
+            @include line-height(22px);
+
+            flex-direction: row;
+            align-items: flex-start;
+
+            .nav_item {
+              margin-bottom: auto;
+              margin-right: 25px;
+
+
+              a {
+                color: $text-blue-main;
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                  border-bottom-color: $text-blue-main;
+                }
+              }
+
+              &.nav_item--desktop {
+                display: none;
+              }
+
+              &.nav_item--active {
+                a {
+                  border-bottom-color: $text-blue-main;
+                }
+              }
+            }
+          }
+
+          > .nav_items_secondary {
+            @include font-open-sans-light;
+            @include font-size(14px);
+            @include line-height(19px);
+            margin-bottom: 18px;
+          }
+        }
+
+        .nav_quicklinks {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include size-xl {
+  .menu {
+    .nav {
+      .menu-container {
+        .nav_items {
+          > .nav_items_primary, > .nav_items_secondary {
+            .nav_item {
+              margin-right: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

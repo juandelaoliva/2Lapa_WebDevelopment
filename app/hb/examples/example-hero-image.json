@@ -1,0 +1,33 @@
+{
+  "pageID": "example-hero-image",
+  "pageTitle": "Hero image example",
+  "sections": [
+    {
+      "id": "content-headline-primary_hero-image",
+      "optional_classes": "",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "Lorem Ipsum",
+        "copy_text": "Lorem Ipsum dolor."
+      }
+    },
+    {
+      "id": "content-hero-image",
+      "optional_classes": "",
+      "type": "content-hero-image",
+      "content": {
+        "position": "center",
+        "text_align": "text-center",
+        "width": "50%",
+        "image_url": "http://lorempixel.com/output/abstract-q-c-1024-768-3.jpg",
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "text": "Phasellus pharetra porta tortor, at maximus lorem vulputate et. Maecenas mattis turpis vitae sollicitudin rhoncus. Donec fermentum sodales fringilla. Nullam accumsan, sapien sit amet auctor posuere, libero nulla posuere ex, nec egestas magna massa a mi. Cras dolor ipsum, gravida eget risus ac, molestie mollis lectus.",
+        "link": {
+          "text": "Read more",
+          "url": "#",
+          "target": "_top"
+        }
+      }
+    }
+  ]
+}

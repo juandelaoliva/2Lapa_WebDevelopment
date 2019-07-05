@@ -1,0 +1,51 @@
+<section
+        class="AD19_TextTeaserComb {{#if optional_classes}}{{optional_classes}}{{/if}} {{#if content.layout}}{{content.layout}}{{/if}}"
+        {{#if id}}id="{{id}}"{{/if}}>
+    {{#with content}}
+        {{#if image_url}}
+            <div class="AD19_TextTeaserComb_image">
+                <img src="{{image_url}}">
+            </div>
+        {{/if}}
+        <div class="AD19_TextTeaserComb_content">
+            {{#if header}}<h2>{{header}}</h2>{{/if}}
+            {{#if copy_text}}
+                <div class="AD19_TextTeaserComb_content_copy_text">
+                    {{{copy_text}}}
+                </div>
+            {{/if}}
+            {{#if link.url}}
+                <a class="AD19_TextTeaserComb_action_link" href="{{link.url}}" {{#if target}}target="{{link.target}}"{{/if}}>{{link.text}}</a>
+            {{/if}}
+        </div>
+    {{/with}}
+</section>
+
+{{!
+
+Description:
+
+Text/Teaser Combination
+
+layout: the position of the image. If not provided, the image is centered.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_TextTeaserComb",
+    "content": {
+        "image_url": "http://link.to/image",
+        "header": "Lorem ipsum...",
+        "copy_text": "Lorem ipsum...",
+        "layout": "image-left|image-right", (optional)
+        "link": {
+            "text": "Lorem ipsum...",
+            "url": "http://link.to/content",
+            "target": "_top"
+        }
+    }
+}
+
+}}

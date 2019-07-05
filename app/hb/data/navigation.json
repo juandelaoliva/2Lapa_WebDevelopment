@@ -1,0 +1,77 @@
+{
+  "configuration": {
+    "logo_url": "/images/assets/logo.svg",
+    "logo_alt": "Admiral Direkt"
+  },
+  "main_nav": {
+    "optional_classes": "",
+    "navpoints": [
+      {
+        "navpoint_title": "KFZ Versicherung",
+        "navpoint_url": "./kfz-versicherung.html",
+        "navpoint_dev_url": "./kfz-versicherung.html",
+        "navpoint_name": "kfz-versicherung"
+      },
+      {
+        "navpoint_title": "Schaden melden",
+        "navpoint_url": "./schaden-melden.html",
+        "navpoint_dev_url": "./schaden-melden.html",
+        "navpoint_name": "schaden-melden"
+      }
+    ]
+  },
+  "secondary_nav": {
+    "optional_classes": "",
+    "navpoints": [
+      {
+        "navpoint_title": "Ratgeber",
+        "navpoint_url": "./ratgeber.html",
+        "navpoint_dev_url": "./ratgeber.html",
+        "navpoint_name": "ratgeber"
+      },
+      {
+        "navpoint_title": "Über uns",
+        "navpoint_url": "./uber-uns.html",
+        "navpoint_dev_url": "./uber-uns.html",
+        "navpoint_name": "uber-uns"
+      },
+      {
+        "navpoint_title": "Kontakt",
+        "navpoint_url": "./kontakt.html",
+        "navpoint_dev_url": "./kontakt.html",
+        "navpoint_name": "kontakt"
+      }
+    ]
+  },
+  "tertiary_nav": {
+    "optional_classes": "",
+    "navpoints_top": [
+      {
+        "navpoint_title": "Karriere",
+        "navpoint_url": "./karriere.html",
+        "navpoint_dev_url": "./karriere.html",
+        "navpoint_name": "karriere"
+      },
+      {
+        "navpoint_title": "Presse",
+        "navpoint_url": "./presse.html",
+        "navpoint_dev_url": "./presse.html",
+        "navpoint_name": "presse"
+      },
+      {
+        "navpoint_title": "Downloads",
+        "navpoint_url": "./downloads.html",
+        "navpoint_dev_url": "./downloads.html",
+        "navpoint_name": "downloads"
+      }
+    ],
+    "navpoints_bottom": [
+      {
+        "navpoint_title": "Kunden werben Freunde",
+        "navpoint_url": "./kunden-werben-freunde.html",
+        "navpoint_dev_url": "./kunden-werben-freunde.html",
+        "navpoint_name": "kunden-werben-freunde"
+      }
+    ]
+  }
+}

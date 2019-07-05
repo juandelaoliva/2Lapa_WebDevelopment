@@ -1,0 +1,98 @@
+.AD19_FindInsurWiz {
+  @include font-size(14px);
+  @include line-height(26px);
+
+  color: $text-blue-main;
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .AD19_FindInsurWiz-content-wrapper {
+    width: 100%;
+    @extend %grid__container;
+    //@extend %grid__container-padding;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include size-l {
+      padding: 80px 20px;
+    }
+  }
+
+  .AD19_FindInsurWiz-content {
+    width: 100%;
+
+    h2 {
+      @include font-size(10px);
+      @include line-height(14px);
+      letter-spacing: calculate-rem(0.02px);
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $primary-blue-1;
+      margin-bottom: 4px;
+
+      @include size-l {
+        @include font-size(12px);
+        @include line-height(17px);
+        letter-spacing: calculate-rem(0.03px);
+      }
+    }
+
+    .AD19_FindInsurWiz-content__copy {
+      @include heading-bold-italic();
+      @include line-height(27px);
+      margin-bottom: 40px;
+
+      @include size-l {
+        @include line-height(33px);
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .AD19_FindInsurWiz-image {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    margin-bottom: 60px;
+  }
+  &.content-row {
+    .AD19_FindInsurWiz-image {
+      flex-direction: row;
+    }
+  }
+  &.content-column {
+    .AD19_FindInsurWiz-image {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 30px;
+    }
+  }
+
+  // CTA styles
+  .AD19_FindInsurWiz-cta {
+    display: inline-block;
+
+    @include font-size(16px);
+    @include line-height(22px);
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: transparent;
+    color: $text-lightgreen;
+    padding: 12px 40px;
+    position: relative;
+    border: 2px solid $text-lightgreen;
+
+    // setting rounded sides
+    border-top-left-radius: 100% 1000px;
+    border-bottom-left-radius: 100% 1000px;
+    border-top-right-radius: 100% 1000px;
+    border-bottom-right-radius: 100% 1000px;
+  }
+}

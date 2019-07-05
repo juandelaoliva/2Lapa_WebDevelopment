@@ -1,0 +1,40 @@
+<picture>
+    {{#each image.sources}}
+        <source media="{{this.media_query}}" srcset="{{this.url}}">
+    {{/each}}
+
+    <img src="{{image.default.url}}" {{#if alt}}alt="{{alt}}"{{/if}} {{#if title}}title="{{title}}"{{/if}}>
+</picture>
+
+{{!
+
+Description:
+
+Component Responsive Image.
+
+Include:
+
+{ { > 'responsiveImage/responsiveImage' content=content.image alt=content.header title=content.header } }
+
+Json usage:
+
+{
+    "type": "responsiveImage",
+    "alt": "",
+    "title": "",
+    "image": {
+        "sources": [
+            {
+                "url": "http://link.to/image",
+                "media_query": "" (The media query definition)
+            },
+            {}, ...
+        ],
+        "default": {
+            "url": "http://link.to/image"
+        }
+    }
+}
+
+}}
+

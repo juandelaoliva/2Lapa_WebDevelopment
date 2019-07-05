@@ -1,0 +1,153 @@
+{
+  "pageID": "AD19_FindInsurWiz",
+  "pageTitle": "AD19_FindInsurWiz",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_FindInsurWiz",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_FindInsurWiz-example",
+      "type": "AD19_FindInsurWiz",
+      "content": {
+        "header": "Schritt 1 von 3",
+        "copy_text": "Was für ein Fahrzeug wollen Sie versichern?",
+        "optional_classes": "full-width bg-secondary-blue content-row",
+        "step": "step-1",
+        "options": [
+          {
+            "id": "AD19_FindInsurWiz-option1",
+            "optional_classes": "step-1",
+            "type": "AD19_FindInsurWiz_option",
+            "content": {
+              "option_id": "step-1-option-1",
+              "image_option": "/images/assets/symbol-product-komfort.png",
+              "option_text": "Neuwagen"
+            }
+          },
+          {
+            "id": "AD19_FindInsurWiz-option2",
+            "optional_classes": "step-1",
+            "type": "AD19_FindInsurWiz_option",
+            "content": {
+              "option_id": "step-1-option-2",
+              "image_option": "/images/assets/symbol-product-komfort.png",
+              "option_text": "Gebrauchtwagen"
+            }
+          }
+        ],
+        "link": {
+          "text": "Weiter zu Schritt 2",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "AD19_FindInsurWiz-example-step-2",
+      "type": "AD19_FindInsurWiz",
+      "content": {
+        "header": "Schritt 2 von 3",
+        "copy_text": "Wie alt ist das Fahrzeug?",
+        "optional_classes": "full-width bg-secondary-blue content-column",
+        "step": "step-2",
+        "options": [
+          {
+            "id": "AD19_FindInsurWiz-example-step-2",
+            "optional_classes": "step-2",
+            "type": "AD19_FindInsurWiz_option",
+            "content": {
+              "option_id": "step-2-option-1",
+              "image_option": "",
+              "option_text": "bis 2 Jahre"
+            }
+          },
+          {
+            "id": "AD19_FindInsurWiz-example-step-2",
+            "optional_classes": "step-2",
+            "type": "AD19_FindInsurWiz_option",
+            "content": {
+              "option_id": "step-2-option-2",
+              "image_option": "",
+              "option_text": "2 bis 7 Jahre"
+            }
+          },
+          {
+            "id": "AD19_FindInsurWiz-example-step-2",
+            "optional_classes": "step-2",
+            "type": "AD19_FindInsurWiz_option",
+            "content": {
+              "option_id": "step-2-option-3",
+              "image_option": "",
+              "option_text": "8 bis 10 Jahre"
+            }
+          },
+          {
+            "id": "AD19_FindInsurWiz-example-step-2",
+            "optional_classes": "step-2",
+            "type": "AD19_FindInsurWiz_option",
+            "content": {
+              "option_id": "step-2-option-4",
+              "image_option": "",
+              "option_text": "älter als 10 Jahre"
+            }
+          }
+        ],
+        "link": {
+          "text": "Weiter zu Schritt 3",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "final-step-1-option-1",
+      "optional_classes": "",
+      "type": "AD19_FindInsurWiz_final",
+      "content": {
+        "from": "step-1-option-1",
+        "copy_text": "Final 1<br>Ergebnis: Vollkasko Premium"
+      }
+    },
+    {
+      "id": "final-step-2-option-1",
+      "optional_classes": "",
+      "type": "AD19_FindInsurWiz_final",
+      "content": {
+        "from": "step-2-option-1",
+        "copy_text": "Final 2-1<br>Vollkasko Premium Tariff"
+      }
+    },
+    {
+      "id": "final-step-2-option-2",
+      "optional_classes": "",
+      "type": "AD19_FindInsurWiz_final",
+      "content": {
+        "from": "step-2-option-2",
+        "copy_text": "Final 2-2<br>Vollkasko Komfort Tariff"
+      }
+    },
+    {
+      "id": "final-step-2-option-3",
+      "optional_classes": "",
+      "type": "AD19_FindInsurWiz_final",
+      "content": {
+        "from": "step-2-option-3",
+        "copy_text": "Final 2-3<br>Tellkasko Premium Tariff"
+      }
+    },
+    {
+      "id": "final-step-2-option-4",
+      "optional_classes": "",
+      "type": "AD19_FindInsurWiz_final",
+      "content": {
+        "from": "step-2-option-4",
+        "copy_text": "Final 2-4<br>Haftpflicht Basis Tariff"
+      }
+    }
+  ]
+}

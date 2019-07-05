@@ -1,0 +1,121 @@
+<a href="./index.html" class="header-logo-wrapper">
+    <img src="{{navigation.configuration.logo_url}}" alt="{{navigation.configuration.logo_alt}}">
+</a>
+
+<div class="menu">
+    <nav class="nav {{#if navigation.secondary_nav.optional_classes}}{{navigation.secondary_nav.optional_classes}}{{/if}}" role="navigation">
+        <div class="menu-container">
+            <div class="mobile_menu_actions">
+                <a class="shortcuts-search" href="#" title="{{header.shortcuts.search_label}}"><span>{{header.shortcuts.search_label}}</span></a>
+                <a class="shortcuts-profile" href="{{header.shortcuts.profile_link}}" title="{{header.shortcuts.profile_label}}"><span>{{header.shortcuts.profile_label}}</span></a>
+            </div>
+            <div class="nav_items">
+                {{#if navigation.secondary_nav}}
+                    <div class="nav_items_secondary">
+                        {{#each navigation.secondary_nav.navpoints}}
+                            <div class="nav_item {{#ifCond this.navpoint_name '=='
+                                                           @local.pageID}} nav_item--active{{/ifCond}}">
+                                <a href="{{#if config.isdevelop}}{{this.navpoint_dev_url}}{{else}}{{this.navpoint_url}}{{/if}}">{{this.navpoint_title}}</a>
+                            </div>
+                        {{/each}}
+                    </div>
+                {{/if}}
+
+                {{#if navigation.main_nav}}
+                    <div class="nav_items_primary">
+                        {{#each navigation.main_nav.navpoints}}
+                            <div class="nav_item {{#ifCond this.navpoint_name '=='
+                                                           @local.pageID}} nav_item--active{{/ifCond}}">
+                                <a href="{{#if config.isdevelop}}{{this.navpoint_dev_url}}{{else}}{{this.navpoint_url}}{{/if}}">{{this.navpoint_title}}</a>
+                            </div>
+                        {{/each}}
+                    </div>
+                {{/if}}
+            </div>
+            {{#if navigation.tertiary_nav}}
+                <div class="nav_quicklinks {{#if navigation.tertiary_nav.optional_classes}}navigation.tertiary_nav.optional_classes{{/if}}">
+                    {{#if navigation.tertiary_nav.navpoints_top}}
+                        <div class="nav_quicklinks_top_row">
+                            {{#each navigation.tertiary_nav.navpoints_top}}
+                                <a href="{{#if config.isdevelop}}{{this.navpoint_dev_url}}{{else}}{{this.navpoint_url}}{{/if}}" title="{{this.navpoint_title}}"><span>{{this.navpoint_title}}</span></a>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                    {{#if navigation.tertiary_nav.navpoints_bottom}}
+                        <div class="nav_quicklinks_bottom_row">
+                            {{#each navigation.tertiary_nav.navpoints_bottom}}
+                                <a href="{{#if config.isdevelop}}{{this.navpoint_dev_url}}{{else}}{{this.navpoint_url}}{{/if}}" title="{{this.navpoint_title}}"><span>{{this.navpoint_title}}</span></a>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                </div>
+            {{/if}}
+        </div>
+    </nav>
+</div>
+
+<div id="header-shortcuts">
+    <span class="shortcuts-phone-text">{{header.shortcuts.phone_text}}</span>
+    <a class="shortcuts-search" href="#" title="{{header.shortcuts.search_label}}"><span>{{header.shortcuts.search_label}}</span></a>
+    <a class="shortcuts-phone" href="#" title="{{header.shortcuts.phone_label}}"><span>{{header.shortcuts.phone_label}}</span></a>
+
+    <a class="shortcuts-tariff" href="{{header.shortcuts.tariff_link}}" title="{{header.shortcuts.tariff_text}}"><span>{{header.shortcuts.tariff_text}}</span></a>
+    <a class="shortcuts-profile" href="{{header.shortcuts.profile_link}}" title="{{header.shortcuts.profile_label}}"><span>{{header.shortcuts.profile_label}}</span></a>
+    <a class="shortcuts-menu-trigger" title="{{header.shortcuts.menu_label}}"><span id="mobile_menu_trigger"></span></a>
+</div>
+
+{{!
+
+USAGE:
+
+Component contains a image with full width. You should not mix fullwidth slider components with 50/50 components
+navpoint_name must match pageid
+
+JSON USAGE:
+
+{
+  "configuration": {
+    "logo_url": "images/demo/generic-logo.svg",
+    "logo_alt": "demo-logo"
+  },
+   "main_nav": {
+    "optional_classes": "",
+    "navpoints": [
+      {
+        "navpoint_title": "Rechtschutzversicherung",
+        "navpoint_url": "#",
+        "navpoint_dev_url": "#",
+        "navpoint_name": "rechtschutzversicherung"
+      },
+      {}, ...
+    ]
+  },
+  {
+    "secondary_nav": {
+    "optional_classes": "",
+    "navpoints": [
+      {
+        "navpoint_title": "Über uns",
+        "navpoint_url": "#",
+        "navpoint_dev_url": "#",
+        "navpoint_name": "uber-uns"
+      },
+      {}, ...
+    ]
+  }
+}
+
+Note that the shortcuts come in the header.json context file as follows:
+
+{
+  "shortcuts": {
+    "phone_label": "Phone",
+    "phone_text": "Tel: 123 - 456",
+    "tariff_text": "Tarif berrechnen",
+    "search_label": "Search",
+    "profile_label": "Profile"
+  }
+}
+
+
+}}

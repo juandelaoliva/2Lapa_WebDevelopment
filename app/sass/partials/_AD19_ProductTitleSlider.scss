@@ -1,0 +1,102 @@
+.AD19_ProductTitleSlider {
+  width: 110%;
+  margin-left: -5%;
+  overflow: hidden;
+
+  @include size-l {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &.flexslider {
+    border: none;
+  }
+
+  // Custom hide of the navigation.
+  .flex-direction-nav {
+    display: none !important;
+  }
+
+  .flex-viewport {
+    width: 300px;
+    margin: 0 auto;
+    overflow: visible !important;
+    position: relative;
+  }
+
+  // adapting the slider bullets
+  .flex-control-paging li a {
+    background-color: transparent !important;
+    border: 2px solid $primary-green-1;
+    opacity: 1;
+
+    &.flex-active {
+      background-color: $primary-green-1 !important;
+      border: none;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  ul {
+    @include size-l {
+      max-width: $container-max-width;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &.slides {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 120px;
+        height: auto;
+        margin: 75px auto 30px;
+
+        @include size-m {
+          width: 200px;
+        }
+
+        @include size-l {
+          margin-top: 80px;
+        }
+      }
+    }
+
+    li {
+      &.is_badge {
+        img {
+          margin-top: 95px;
+        }
+      }
+
+      @include size-l {
+        // Not using the shorthand version to avoid issues on IE
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0px;
+        max-width: 400px;
+
+        &.is_badge {
+          a {
+            height: 615px;
+          }
+
+          img {
+            margin: 120px auto 30px;
+          }
+        }
+      }
+
+      @include size-xl {
+        // fix needed for IE to keep items in place
+        flex: inherit;
+      }
+    }
+  }
+}

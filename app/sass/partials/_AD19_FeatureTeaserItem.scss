@@ -1,0 +1,83 @@
+// Styles for FeatureTeaserItem without slider
+.AD19_FeatureTeaserItem {
+  text-align: center;
+  position: relative;
+  display: flex;
+
+  height: 100%;
+
+  background-color: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.24);
+
+  &:hover {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.32);
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 11px;
+
+    @include size-l {
+      padding: 60px 11px;
+    }
+
+    h2 {
+      @include font-size(10px);
+      @include line-height(14px);
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      color: $primary-blue-1;
+
+      @include size-l {
+        @include font-size(12px);
+        @include line-height(17px);
+        margin-bottom: 13px;
+      }
+    }
+
+    .AD19_FeatureTeaserItem_copy {
+      min-height: 78px;
+      display: block;
+
+      // text styles
+      @include font-size(16px);
+      @include line-height(22px);
+      color: $text-blue-main;
+
+      @include size-l {
+        @include font-size(20px);
+        @include line-height(26px);
+      }
+    }
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+    margin: 0 auto 16px;
+
+    @include size-l {
+      width: 150px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+// Additional styles for FeatureTeaserItem as Slide
+.flexslider {
+  .AD19_FeatureTeaserItem {
+    margin: 20px;
+
+    a {
+      padding: 30px 26px;
+
+      @include size-l {
+        padding: 60px 11px 20px;
+      }
+    }
+  }
+}

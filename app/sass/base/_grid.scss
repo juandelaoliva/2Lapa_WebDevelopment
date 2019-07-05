@@ -1,0 +1,208 @@
+/**
+* @file
+* Susy 3 grid
+*
+* Allow for grid. Documentation:
+* https://oddbird.net/susy/
+* https://www.oddbird.net/2017/06/28/susy3/
+* https://www.oddbird.net/2017/09/25/susy-use/
+* https://www.oddbird.net/susy/docs/
+*
+* The whole body of the site has a maximum witdh of 1440px, except for some components
+* The grid maximum width is fixed on 1110px, lateral paddings included.
+*
+*/
+
+// todo check if the changes made in the same commit as this comment should be reversed
+
+// Variables
+
+$container-max-width: 1320px; //maximum width reachable for the grid inside a container
+
+// Default
+
+$susy:(
+  'columns': susy-repeat(6), // how many columns for repeat
+  'gutters': 35px, // default gap
+    // There are three spread option: narrow, wide, and wider.
+    // A narrow spread has one less gutter than columns.
+    // A wide spread has an equal number of columns and gutters.
+    // A wider spread has one more gutter than columns.
+  'spread': 'narrow',
+  'container-spread': 'narrow'
+);
+
+// Custom grids
+
+$grid-12-10-tablet:(
+  'columns': susy-repeat(12),
+  'gutters': 10px,
+  'min-width': $size-m,
+); // 12 columns, gutter 10px
+
+$grid-12-20-tablet:(
+  'columns': susy-repeat(12),
+  'gutters': 20px,
+  'min-width': $size-m,
+); // 12 columns, gutter 20px
+
+$grid-12-60-tablet:(
+  'columns': susy-repeat(12),
+  'gutters': 60px,
+  'min-width': $size-l,
+); // 12 columns, gutter 60px
+
+$grid-12-18-desktop:(
+  'columns': susy-repeat(12),
+  'gutters': 18px,
+  'min-width': $size-l,
+); // 12 columns, gutter 20px
+
+$grid-12-30-desktop:(
+  'columns': susy-repeat(12),
+  'gutters': 30px,
+  'min-width': $size-l,
+); // 12 columns, gutter 18px
+
+// Mixins
+
+@mixin susy-use(
+  $config
+) {
+  //  parse and normalize any shorthand arguments
+  $config: susy-compile($config);
+
+  // record the global settings -
+  // and update the global variable with our new settings
+  $global: $susy;
+  $susy: map-merge($susy, $config) !global;
+
+  // any content inside this mixin
+  // will use the local settings
+  @content;
+
+  // return the global variable to its initial value
+  $susy: $global !global;
+}
+
+@mixin susy-at(
+  $config
+) {
+  //  parse and normalize any shorthand arguments
+  $config: susy-compile($config);
+
+  // build min-and-max queries
+  $min: map-get($config, 'min-width');
+  $min: if($min, '(min-width: #{$min})', null);
+  $max: map-get($config, 'max-width');
+  $max: if($max, '(max-width: #{$max})', null);
+
+  // combine them if we need both
+  $and: if($min and $max, '#{$min} and #{$max}', null);
+  // or fall back to the value we need…
+  $query: $and or $min or $max;
+
+  // apply the results…
+  @media #{$query} {
+    @include susy-use($config) {
+      @content;
+    }
+  }
+}
+
+@mixin push($content) {
+  margin-left: span($content);
+}
+
+@mixin pull($content) {
+  margin-right: span($content);
+}
+
+// Extend for container
+%grid__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include size-l {
+    max-width: $container-max-width;
+  }
+}
+
+%grid__container-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include size-m {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @include size-l {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/*
+Basic Usage:
+
+In order to use Susy, you will need to add the extend #grid__container to your wrapper / container. If the latteral paddings are necessary, just add an extra extend #grid__container-padding
+
+The containers could have different default properties according to the breakpoints:
+
+- Mobiles: 6 columns, gutters of 10px, lateral paddings of 15px. (DEFAULT)
+- Tablet type A: 12 columns, gutters of 10px, lateral paddings of 25px.
+- Tablet type B: 12 columns, gutters of 20px, lateral paddings of 25px.
+- Desktop type A: 12 columns, gutters of 18px, lateral paddings of 30px, maximum width of 1100px.
+- Desktop type B: 12 columns, gutters of 20px, lateral paddings of 30px, maximum width of 1100px.
+
+Once decided the type of grid that we need for each breackpoint, we'll add them to the container with the function:
+
+  @include susy-at($grid-12-10-tablet){
+    // content, classes...
+  }
+
+  @include susy-at($grid-12-18-desktop){
+    // content, classes...
+  }
+
+You will need to add the same number of functions as the number of breakpoints to use. It is not necesary to add mobile breakpoint because is the default grid setup.
+
+For any nested breakpoint function, you will need to declare again the properties that you are using
+(f.e.: width: span(1); ) in order to force to recalculate the math variables
+
+For the child elements, you will use 4 basic functions:
+
+1) span(columns-number property), that indicates the number of width columns and how to take in consideration the gap. If we place 'narrow', it will only take the columns and the interior gutter / gap. If we place 'wide', it will
+take all the columns and all the gutters.
+
+  Examples:
+    - width: span(3);
+    - width: span(4 wide);
+    - width: span(3 of 6 narrow set-gutters 30px); (grid inside a grid and specific gutter)
+
+2) gutter(), that function takes the current value of the gutter. It is useful for example to set margins up. It is possible to do mathematical operations with gutter().
+
+  Examples:
+    - margin-left: gutter();
+    - margin-left: gutter()/2;
+
+3) push(columns-number property), it works similar to span function. It will add a left margin to the element regarding to the previous element (if there is), and it will take in consideration if the gutter policy is 'wide', 'narrow'...
+
+  Examples:
+    - @include push(3);
+    - @include push(6 wide);
+
+4) pull(columns-number property), it works similar to push function, but, it will add margin-right instead to the left.
+
+  Examples:
+    - @include pull(3);
+    - @include pull(6 wide);
+
+For in situ examples, it has been added a demo page "demo.html" isolated from drupal.
+
+*/

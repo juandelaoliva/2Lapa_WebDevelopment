@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800,800i&display=swap');
+
+// Open Sans Light is the default throughout the website, not Open Sans Regular
+@mixin font-open-sans-light {
+  font-style: normal;
+  font-weight: 300;
+}
+@mixin font-open-sans-regular {
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin font-open-sans-semibold {
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin font-open-sans-bold {
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin font-open-sans-bold-italic {
+  font-style: italic;
+  font-weight: 700;
+}
+@mixin font-open-sans-extrabold {
+  font-style: normal;
+  font-weight: 800;
+}
+@mixin font-open-sans-extrabold-italic {
+  font-style: italic;
+  font-weight: 800;
+}

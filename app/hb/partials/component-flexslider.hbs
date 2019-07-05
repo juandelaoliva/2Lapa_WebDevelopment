@@ -1,0 +1,44 @@
+<section class="flexslider {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <ul class="slides">
+        {{#each content.slides}}
+            <li>
+                {{! The slide is a partial to be rendered }}
+                {{> (lookup . 'partial') content=this.slide.content}}
+
+                {{! The caption, if exists }}
+                {{#if this.caption}}
+                    <p class="flex-caption">{{this.caption}}</p>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</section>
+
+{{!
+
+Description:
+
+Component FlexSlider.
+
+This is the full content version of the slider, allowing html content as part of the slider.
+
+Json usage:
+
+{
+  "id": "section_id",
+  "optional_classes": "",
+  "type": "component-flexslider",
+  "content": {
+    "slides": [
+      {
+        "partial": "Reference to the partial.",
+        "caption": "Caption for the slide", (optional)
+        "slide": "The partial json context structure."
+      },
+      {}, ...
+    ]
+  }
+}
+
+}}
+

@@ -1,0 +1,110 @@
+.AD19_ContactTeaser {
+  @extend %grid__container;
+  @extend %grid__container-padding;
+
+  @include font-size(16px);
+  @include line-height(28px);
+  color: $text-blue-main;
+  text-align: center;
+
+  display: flex;
+
+  h2 {
+    width: 85%;
+    @include heading-light-medium;
+    margin: 0 auto 24px auto;
+
+    @include size-l {
+      @include font-size(40px);
+      @include line-height(55px);
+      max-width: 70%;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    li {
+      display: block;
+      margin: 0 10px 65px 10px;
+      width: 212px;
+
+      @include size-l {
+        width: 285px;
+      }
+
+      &:hover, &.active {
+      }
+
+      h3 {
+        @include heading-bold-italic(16px, 18px);
+        margin-bottom: 16px;
+
+        @include size-l {
+          margin-bottom: 24px;
+        }
+      }
+
+      .AD19_ContactTeaser-copy_text {
+        @include font-size(14px);
+        @include line-height(26px);
+
+        margin-bottom: 25px;
+
+        // No samples were provided.
+        // Assuming all headers into the copy text will have the same style.
+        h2, h3, h4, h5, h6 {
+          margin: 0 0 12px;
+          @include font-size(24px);
+        }
+
+        p {
+          @include line-height(22px);
+        }
+      }
+
+      a {
+        display: inline-block;
+
+        &.button {
+          align-self: center;
+
+          @include line-height(15px);
+          @include link-bold(15px, 15px);
+          text-decoration: none;
+
+          border: 2px solid $text-blue-main;
+          color: $text-blue-main;
+          margin: 10px auto 10px auto;
+          padding: 12px 40px;
+          position: relative;
+
+          // setting rounded sides
+          border-top-left-radius: 100% 1000px;
+          border-bottom-left-radius: 100% 1000px;
+          border-top-right-radius: 100% 1000px;
+          border-bottom-right-radius: 100% 1000px;
+
+          @include size-l {
+            margin: 0 auto 85px auto;
+          }
+        }
+        &.link {
+          background: url("../images/assets/icon-arrow_right-blue.svg") center left no-repeat;
+          padding-left: 25px;
+          @include link-bold(16px, 16px);
+          color: $text-blue-main;
+          text-decoration: none;
+        }
+      }
+
+      img {
+        display: block;
+        margin: 0 auto 12px auto;
+      }
+    }
+  }
+}

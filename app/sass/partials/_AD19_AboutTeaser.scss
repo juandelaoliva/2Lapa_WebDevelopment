@@ -1,0 +1,107 @@
+.AD19_AboutTeaser {
+  @extend %grid__container;
+
+  @include font-size(16px);
+  color: $text-blue-main;
+  text-align: center;
+
+  margin-bottom: 10px;
+
+  justify-content: center;
+
+  position: relative;
+  bottom: -310px;
+
+  @include size-l {
+    bottom: -320px;
+  }
+
+  z-index: 1;
+
+  .AD19_AboutTeaser-image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    picture {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      align-self: center;
+    }
+  }
+
+  .AD19_AboutTeaser-content-wrapper {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: $white;
+
+    position: relative;
+
+    top: -40px;
+    @include size-l {
+      top: -230px;
+    }
+
+    width: 335px;
+    @include size-l {
+      width: 630px;
+    }
+
+    // todo: center this horizontally.
+    .AD19_AboutTeaser-content {
+      margin: 0 26px 0 26px;
+      @include size-l {
+        margin: 0 55px 0 55px;
+      }
+
+      @include line-height(26px);
+
+      @include size-l {
+        @include line-height(30px);
+      }
+
+      h2 {
+        @include heading-light-medium;
+        margin-bottom: 16px;
+        margin-top: 32px;
+
+        @include size-l {
+          margin-bottom: 24px;
+          margin-top: 40px;
+        }
+      }
+
+      .AD19_AboutTeaser-content__copy {
+        margin-bottom: 26px;
+
+        @include size-l {
+          margin-bottom: 32px;
+        }
+
+        @include font-size(14px);
+
+        @include size-l {
+          @include font-size(16px);
+        }
+      }
+
+      a {
+        display: inline-block;
+        background: url("../images/assets/icon-arrow_right-green.svg") center left no-repeat;
+        @include link-bold(14px, 16px);
+        text-decoration: none;
+        color: $primary-green-1;
+        padding-left: 25px;
+        margin-bottom: 34px;
+
+        @include size-l {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

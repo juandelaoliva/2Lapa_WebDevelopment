@@ -1,0 +1,49 @@
+<section class="AD19_TeastiTeaser {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <div class="AD19_TeastiTeaser-wrapper">
+        <div class="AD19_TeastiTeaser-image">
+            {{#if content.image}}
+                {{> 'responsiveImage/responsiveImage' image=content.image alt=content.header title=content.header}}
+            {{/if}}
+        </div>
+        <div class="AD19_TeastiTeaser-content-wrapper {{#if content.text_align}}{{content.text_align}}{{/if}}">
+            <div class="AD19_TeastiTeaser-content">
+                <h2>{{content.header}}</h2>
+                <div class="AD19_TeastiTeaser-people">{{{content.people}}}</div>
+                <div class="AD19_TeastiTeaser-position">{{{content.position}}}</div>
+            </div>
+        </div>
+    </div>
+</section>
+{{!
+
+Description:
+
+Testimonial Teaser
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_TeastiTeaser",
+    "content": {
+        "text_align": "",
+        "header": "",
+        "people": "",
+        "position": "",
+        "image": {
+            "sourcesets": [
+                {
+                    "url": "http://link.to/image",
+                    "media_query": "" (The media query definition)
+                },
+                {}, ...
+            ],
+            "default": {
+                "url": "http://link.to/image"
+            }
+        }
+    }
+}
+
+}}

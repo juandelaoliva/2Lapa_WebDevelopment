@@ -1,0 +1,42 @@
+{
+  "pageID": "AD19_TeastiTeaser",
+  "pageTitle": "AD19_TeastiTeaser",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_TeastiTeaser",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_TeastiTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_TeastiTeaser",
+      "content": {
+        "text_align": "text-center",
+        "header": "„Hier steht ein Zitat der beiden Geschäftsführer“",
+        "people": "Thomas Vogel (L) und Matthias Räfler (R)",
+        "position": "Geschäftsführung",
+        "image": {
+          "sources": [
+            {
+              "url": "/images/assets/teasti-teaser-mobile.png",
+              "media_query": "(max-width: 1023px)"
+            },
+            {
+              "url": "/images/assets/teasti-teaser-desktop.png",
+              "media_query": "(min-width: 1024px)"
+            }
+          ],
+          "default": {
+            "url": "/images/assets/teasti-teaser-desktop.png"
+          }
+        }
+      }
+    }
+  ]
+}

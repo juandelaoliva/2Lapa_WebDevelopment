@@ -1,0 +1,14 @@
+{
+  "pageID": "presse",
+  "pageTitle": "Presse",
+  "sections": [
+    {
+      "id": "section-presse",
+      "optional_classes": "",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "Presse"
+      }
+    }
+  ]
+}

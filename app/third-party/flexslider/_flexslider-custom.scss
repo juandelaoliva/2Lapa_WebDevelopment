@@ -1,0 +1,39 @@
+/**
+ * ***** Overriding default theme:
+ * Navigation arrows.
+ * Hide arrows on mobile.
+ */
+.flex-direction-nav {
+  // Set this to `none` in case you want to hide the arrows in mobile.
+  display: block;
+
+  @include size-l {
+    display: block;
+  }
+
+  // arrow color
+  a:before {
+    // todo: find a way to load the customs AFTER the original.
+    color: $primary-green-1 !important;
+    opacity: 0.5;
+  }
+}
+
+// Navigation bullets
+.flex-control-paging li a {
+  background-color: $primary-green-1 !important;
+  opacity: 0.5;
+}
+
+// In case of using captions, this is the place to customize its styles.
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+  font-size: 14px;
+  line-height: 18px;
+}

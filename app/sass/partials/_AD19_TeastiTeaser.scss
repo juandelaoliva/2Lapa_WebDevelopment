@@ -1,0 +1,119 @@
+.AD19_TeastiTeaser {
+  @extend %grid__container;
+
+  .AD19_TeastiTeaser-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+
+    @include size-l {
+      max-width: 920px;
+    }
+  }
+
+  .AD19_TeastiTeaser-image {
+    position: relative;
+    z-index: 1;
+    max-width: 745px;
+
+    picture {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .AD19_TeastiTeaser-content-wrapper {
+    background: url('/images/assets/teasti-teaser-pattern-mobile.png') bottom left no-repeat;
+    position: relative;
+    margin-top: -45px;
+    background-size: 95%;
+    padding: 0 0 25px 20px;
+    width: 93%;
+    max-width: 676px;
+
+    &.left {
+      align-self: flex-start;
+    }
+    &.center {
+      align-self: center;
+    }
+    &.right {
+      align-self: flex-end;
+    }
+
+    &.text-left {
+      text-align: left;
+    }
+    &.text-center {
+      text-align: center;
+    }
+    &.text-right {
+      text-align: right;
+    }
+    
+    @include size-l {
+      background-image: url('/images/assets/teasti-teaser-pattern-desktop.png');
+      margin-top: -225px;
+      padding: 0 0 40px 40px;
+
+      // desktop classes can be optionally added to component
+      // to handle specific positioning for desktop and mobile
+      &.desktop-left {
+        align-self: flex-start;
+      }
+      &.desktop-center {
+        align-self: center;
+      }
+      &.desktop-right {
+        align-self: flex-end;
+      }
+
+      &.text-desktop-left {
+        text-align: left;
+      }
+      &.text-desktop-center {
+        text-align: center;
+      }
+      &.text-desktop-right {
+        text-align: right;
+      }
+    }
+  }
+
+  .AD19_TeastiTeaser-content {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    @include font-size(12px);
+    @include line-height(18px);
+    color: $text-blue-main;
+    padding: 32px;
+
+    @include size-l {
+      @include font-size(16px);
+      @include line-height(22px);
+      padding: 60px;
+    }
+
+    h2 {
+      @include font-size(26px);
+      @include line-height(36px);
+      margin-bottom: 24px;
+
+      @include size-l {
+        @include font-size(40px);
+        @include line-height(56px);
+      }
+    }
+
+    .AD19_TeastiTeaser-position {
+      font-weight: bold;
+    }
+  }
+
+}

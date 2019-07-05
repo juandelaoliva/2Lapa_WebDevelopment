@@ -1,0 +1,36 @@
+<div class="AD19_FeatureTeaserItem {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    {{#with content}}
+        <a href="{{link.url}}" {{#if link.target}}target="{{link.target}}"{{/if}}>
+            {{#if icon_url}}
+                <img src="{{icon_url}}" alt="{{header}}">
+            {{/if}}
+            <h2>{{header}}</h2>
+            <span class="AD19_FeatureTeaserItem_copy">{{{copy_text}}}</span>
+        </a>
+    {{/with}}
+</div>
+
+{{!
+
+Description:
+
+Feature Teaser Item
+
+Json usage:
+
+{
+    "id": "teaser_item_id",
+    "optional_classes": "",
+    "type": "AD19_FeatureTeaserItem",
+    "content": {
+        "icon_url": "http://path.to/icon",
+        "header": "", (optional)
+        "copy_text": "", (optional)
+        "link": {
+            "url": "http://link.to/content",
+            "target": "_top" (optional)
+        }
+    }
+}
+
+}}

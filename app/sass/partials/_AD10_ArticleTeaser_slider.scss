@@ -1,0 +1,44 @@
+.AD19_ArticleTeaser_slider {
+  width: 110%;
+  // overwriting the slider default
+  margin-left: -6% !important;
+  border: none !important;
+
+  @include size-l {
+    width: 100%;
+    // overwriting the slider default
+    margin-left: 0 !important;
+  }
+
+  ul {
+    @include size-l {
+      max-width: $container-max-width;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        //width: auto;
+        width: span(4);
+
+        @include size-l {
+          width: span(4 of 12);
+        }
+      }
+    }
+  }
+
+  // adapting the slider bullets
+  .flex-control-paging li a {
+    background-color: transparent !important;
+    border: 2px solid $primary-green-1;
+    opacity: 1;
+
+    &.flex-active {
+      background-color: $primary-green-1 !important;
+      border: none;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

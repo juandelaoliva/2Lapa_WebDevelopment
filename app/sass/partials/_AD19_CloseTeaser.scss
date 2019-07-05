@@ -1,0 +1,64 @@
+.AD19_CloseTeaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  margin: 20px auto;
+  padding: 0 40px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+
+  //text styles
+  @include heading-bold-italic(20px, 24px);
+  @include line-height(27px);
+  font-weight: bold;
+  font-style: italic;
+  color: $text-blue-main;
+
+  @include size-l {
+    @include susy-at($grid-12-18-desktop){
+      width: span(6);
+      max-width: 630px;
+    }
+  }
+
+  img {
+    width: 120px;
+    height: auto;
+    align-self: center;
+    margin: 60px auto 32px auto;
+
+    @include size-l {
+      width: 150px;
+      margin-bottom: 24px;
+    }
+  }
+
+  // CTA styles
+  a {
+    display: block;
+    align-self: center;
+
+    @include font-size(15px);
+    @include line-height(15px);
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: $text-lightgreen;
+    color: $white;
+    margin: 25px auto 80px auto;
+    padding: 15px 40px;
+    position: relative;
+
+    // setting rounded sides
+    border-top-left-radius: 100% 1000px;
+    border-bottom-left-radius: 100% 1000px;
+    border-top-right-radius: 100% 1000px;
+    border-bottom-right-radius: 100% 1000px;
+
+    @include size-l {
+      margin:  40px auto 85px auto;
+    }
+  }
+}

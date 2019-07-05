@@ -1,0 +1,34 @@
+.AD19_FloatingButton {
+  display: inline-block;
+  position: fixed;
+  z-index: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: $white url('/images/assets/icon-chat-green.svg') center no-repeat;
+  background-size: 50% 50%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+  width: 60px;
+  height: 60px;
+  right: 10px;
+  bottom: 22px;
+
+  @include size-l {
+    width: 71px;
+    height: 71px;
+    right: inherit;
+    left: 93%;
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
+  }
+
+  img {
+    display: block;
+  }
+}

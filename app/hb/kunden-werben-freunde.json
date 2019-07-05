@@ -1,0 +1,14 @@
+{
+  "pageID": "kunden-werben-freunde",
+  "pageTitle": "Kunden werben Freunde",
+  "sections": [
+    {
+      "id": "section-kunden-werben-freunde",
+      "optional_classes": "",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "Kunden werben Freunde"
+      }
+    }
+  ]
+}

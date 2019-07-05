@@ -1,0 +1,30 @@
+<section class="AD19_TextHeadline {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    {{#if content.header}}
+        <h1>{{{content.header}}}</h1>
+    {{/if}}
+    {{#if content.copy_text}}
+        <div class="AD19_TextHeadline__copy">
+            {{{content.copy_text}}}
+        </div>
+    {{/if}}
+</section>
+
+{{!
+
+Description:
+
+Text with Headline
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_TextHeadline",
+    "content": {
+        "header": "Lorem Ipsum",
+        "copy_text": "Lorem Ipsum dolor.",
+    }
+}
+
+}}

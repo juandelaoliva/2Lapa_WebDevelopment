@@ -1,0 +1,31 @@
+{
+  "pageID": "AD19_ProductTitleSlide",
+  "pageTitle": "AD19_ProductTitleSlide",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_ProductTitleSlide",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_ProductTitleSlide-example",
+      "optional_classes": "",
+      "type": "AD19_ProductTitleSlide",
+      "content": {
+        "image_url": "../images/assets/symbol-product-basis.png",
+        "header": "Basis",
+        "copy_text": "<p>Damit fahren Sie sicher!<br>Die wichtigsten Schadensfälle sind abgedeckt</p>",
+        "link": {
+          "url": "http://example.com",
+          "text": "Klick hier!",
+          "target": "_top"
+        }
+      }
+    }
+  ]
+}

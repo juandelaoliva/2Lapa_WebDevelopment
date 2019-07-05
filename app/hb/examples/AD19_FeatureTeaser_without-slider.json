@@ -1,0 +1,73 @@
+{
+  "pageID": "AD19_FeatureTeaser",
+  "pageTitle": "AD19_FeatureTeaser",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_FeatureTeaser",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_FeatureTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_FeatureTeaser",
+      "content": {
+        "slides": [
+          {
+            "icon_url": "../images/assets/symbol-heart.png",
+            "header": "Zweitwagen-Versicherung",
+            "copy_text": "Sparen Sie jetzt richtig und profitieren Sie von Ihrem Erstfahrzeug",
+            "link": {
+              "url": "#"
+            }
+          },
+          {
+            "icon_url": "../images/assets/symbol-heart.png",
+            "header": "Multicar",
+            "copy_text": "Sparen Sie bis zu 17,5 % bei mehreren Fahrzeugen im Haushalt",
+            "link": {
+              "url": "#"
+            }
+          },
+          {
+            "icon_url": "../images/assets/symbol-heart.png",
+            "header": "Parkschaden-Schutz",
+            "copy_text": "Delle oder Kratzer? Bei uns sind Sie optimal abgesichert - ganz ohne Schadenstufung",
+            "link": {
+              "url": "#"
+            }
+          },
+          {
+            "icon_url": "../images/assets/symbol-heart.png",
+            "header": "Zweitwagen-Versicherung",
+            "copy_text": "Sparen Sie jetzt richtig und profitieren Sie von Ihrem Erstfahrzeug",
+            "link": {
+              "url": "#"
+            }
+          },
+          {
+            "icon_url": "../images/assets/symbol-heart.png",
+            "header": "Multicar",
+            "copy_text": "Sparen Sie bis zu 17,5 % bei mehreren Fahrzeugen im Haushalt",
+            "link": {
+              "url": "#"
+            }
+          },
+          {
+            "icon_url": "../images/assets/symbol-heart.png",
+            "header": "Parkschaden-Schutz",
+            "copy_text": "Delle oder Kratzer? Bei uns sind Sie optimal abgesichert - ganz ohne Schadenstufung",
+            "link": {
+              "url": "#"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

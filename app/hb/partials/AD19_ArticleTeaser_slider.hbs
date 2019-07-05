@@ -1,0 +1,41 @@
+<section class="flexslider AD19_ArticleTeaser_slider {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <ul class="slides">
+        {{#each content.slides}}
+            <li>
+                {{> 'AD19_ArticleTeaser' content=this.slide.content}}
+            </li>
+        {{/each}}
+    </ul>
+</section>
+
+{{!
+
+Description:
+
+Article Teaser Slider. Each slide has a AD19_ArticleTeaser component.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_ArticleTeaser_slider",
+    "content": {
+        "slides": [
+            {
+                "category": "Kategorie",
+                "header": "Lorem ipsum...",
+                "copy_text": "Lorem ipsum...",
+                "image_url": "http://link.to/image",
+                "button": {
+                    "url": "http://link.to/content",
+                    "text": "Zum Artikel",
+                    "target": "_top"
+                }
+            },
+            {}, ...
+        ]
+    }
+}
+
+}}

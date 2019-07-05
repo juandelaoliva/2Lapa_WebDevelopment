@@ -1,0 +1,77 @@
+.AD19_ImageTextSlider {
+  /**
+ * ***** Overriding default theme:
+ * Navigation arrows.
+ * Hide arrows on mobile.
+ */
+
+  // added to avoid default hover styles to be applied
+  &.flexslider:hover .flex-direction-nav,
+  .flex-direction-nav {
+
+    a{
+      width: 15px;
+      height: 25px;
+      top: 60%;
+      opacity: 1;
+
+      @include size-l {
+        width: 18px;
+        height: 28px;
+      }
+
+      &.flex-prev {
+        left: 0;
+        @include size-l {
+          left: 17%;
+        }
+      }
+
+      &.flex-next {
+        right: 0;
+        @include size-l {
+          right: 17%;
+        }
+      }
+
+      &:before {
+        // todo: find a way to load the customs AFTER the original.
+        // arrow color
+        color: $primary-green-1;
+        opacity: 1;
+        font-size: 25px;
+        @include size-l {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  // Navigation bullets
+  .flex-control-paging li a {
+    background-color: transparent !important;
+    border: 2px solid $primary-green-1;
+    opacity: 1;
+    box-shadow: none;
+
+    &.flex-active {
+      background-color: $primary-green-1 !important;
+      width: 11px;
+      height: 11px;
+    }
+  }
+
+  // In case of using captions, this is the place to customize its styles.
+  .flex-caption {
+    width: 96%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+}

@@ -1,0 +1,30 @@
+{
+  "pageID": "AD19_CloseTeaser",
+  "pageTitle": "AD19_CloseTeaser",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_CloseTeaser",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_CloseTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_CloseTeaser",
+      "content": {
+        "icon_url": "/images/assets/symbol-calculator.png",
+        "copy_text": "Berechen Sie jetzt ihren KFZ Beitrag",
+        "button": {
+            "text": "Berechnung starten",
+            "url": "http://link.to/content",
+            "target": "_blank"
+        }
+      }
+    }
+  ]
+}

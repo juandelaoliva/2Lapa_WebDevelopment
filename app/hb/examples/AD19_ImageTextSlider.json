@@ -1,0 +1,53 @@
+{
+  "pageID": "AD19_ImageTextSlide",
+  "pageTitle": "AD19_ImageTextSlide",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_ImageTextSlider",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_ImageTextSlider-example",
+      "optional_classes": "",
+      "type": "AD19_ImageTextSlider",
+      "content": {
+        "slides": [
+          {
+            "image_url": "https://dummyimage.com/127x129/000/fff.png",
+            "image_alt": "Trusted shops guarantee",
+            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+            "author": "Benjamin K, Köln",
+            "position": "KFZ Premium Vollkasko"
+          },
+          {
+            "image_url": "https://dummyimage.com/127x129/000/fff.png",
+            "image_alt": "Trusted shops guarantee",
+            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+            "author": "Benjamin K, Köln",
+            "position": "KFZ Premium Vollkasko"
+          },
+          {
+            "image_url": "https://dummyimage.com/127x129/000/fff.png",
+            "image_alt": "Trusted shops guarantee",
+            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+            "author": "Benjamin K, Köln",
+            "position": "KFZ Premium Vollkasko"
+          },
+          {
+            "image_url": "https://dummyimage.com/127x129/000/fff.png",
+            "image_alt": "Trusted shops guarantee",
+            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
+            "author": "Benjamin K, Köln",
+            "position": "KFZ Premium Vollkasko"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<section class="AD19_CloseTeaser {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    {{#with content}}
+        {{#if icon_url}}
+            <img src="{{icon_url}}" alt="{{copy_text}}" width="250">
+        {{/if}}
+        <p>{{{copy_text}}}</p>
+        <a href="{{button.url}}" target="{{button.target}}">{{button.text}}</a>
+    {{/with}}
+</section>
+
+{{!
+
+Description:
+
+Close Teaser
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_CloseTeaser",
+    "content": {
+        "icon_url": "http://link.to/icon",
+        "copy_text": "Lorem ipsum...",
+        "button": {
+            "text": "Lorem ipsum...",
+            "url": "http://link.to/content",
+            "target": "_top"
+        }
+    }
+}
+
+}}

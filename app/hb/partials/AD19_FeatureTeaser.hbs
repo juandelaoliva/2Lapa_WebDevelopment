@@ -1,0 +1,45 @@
+<section class="AD19_FeatureTeaser {{#if content.enable_slider}}has-slider{{/if}}">
+    <div class="AD19_FeatureTeaser-wrapper {{#if content.enable_slider}}flexslider{{/if}} {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+        <ul {{#if content.enable_slider}}class="slides"{{/if}}>
+            {{#each content.slides}}
+                <li>
+                    {{! The slide is a partial to be rendered }}
+                    {{> 'AD19_FeatureTeaserItem' content=this}}
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+
+{{!
+
+Description:
+
+Feature Teaser Slider. Each slide has a AD19_FeatureTeaserItem component.
+
+enable_slider: Enables or disables the slider when the node exists.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_FeatureTeaser",
+    "content": {
+        "enable_slider": "true", (optional)
+        "slides": [
+            {
+                "icon_url": "http://path.to/icon",
+                "header": "", (optional)
+                "copy_text": "", (optional)
+                "link": {
+                    "url": "http://link.to/content",
+                    "target": "_top" (optional)
+                }
+            },
+            {}, ...
+        ]
+    }
+}
+
+}}

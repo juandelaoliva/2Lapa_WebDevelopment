@@ -1,0 +1,52 @@
+{
+  "pageID": "AD19_FactIcons",
+  "pageTitle": "AD19_FactIcons",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_FactIcons",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_FactIcons-example",
+      "optional_classes": "",
+      "type": "AD19_FactIcons",
+      "content": {
+        "header": "Unsere KFZ Versicherung bietet umfassenden Schutz",
+        "copy_text": "<p>Egal ob Erstwagen oder Zweitwagenversicherung , Kfz-Haftpflicht oder Teilkaskoversicherung: profitieren Sie von dem ausgezeichneten Schutz von AdmiralDirekt.de.</p>",
+        "icons": [
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Deckungssumme",
+            "copy_text": "100 Millionen Pauschal"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Personenschaden",
+            "copy_text": "Bis zu 15 Millionen"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Kaufpreisentschädigung",
+            "copy_text": "Bis zu 24 Monate"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Deckungssumme",
+            "copy_text": "100 Millionen Pauschal"
+          },
+          {
+            "icon_url": "/images/assets/icon-heart.svg",
+            "header": "Deckungssumme",
+            "copy_text": "100 Millionen Pauschal"
+          }
+        ]
+      }
+    }
+  ]
+}

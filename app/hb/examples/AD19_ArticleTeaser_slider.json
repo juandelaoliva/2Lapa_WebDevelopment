@@ -1,0 +1,58 @@
+{
+  "pageID": "AD19_ArticleTeaser_slider",
+  "pageTitle": "AD19_ArticleTeaser_slider",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_ArticleTeaser",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_ArticleTeaser_slider",
+      "optional_classes": "",
+      "type": "AD19_ArticleTeaser_slider",
+      "content": {
+        "slides": [
+          {
+            "category": "Kategorie",
+            "header": "Meine erste Kfz-Versicherung",
+            "copy_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
+            "image_url": "/images/assets/teaser_versicherung.png",
+            "button": {
+              "url": "#",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "category": "Kategorie",
+            "header": "Meine erste Kfz-Versicherung",
+            "copy_text": "Meine erste Kfz-Versicherung",
+            "image_url": "/images/assets/teaser_versicherung.png",
+            "button": {
+              "url": "#",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          },
+          {
+            "category": "Kategorie",
+            "header": "Meine erste Kfz-Versicherung",
+            "copy_text": "Meine erste Kfz-Versicherung",
+            "image_url": "/images/assets/teaser_versicherung.png",
+            "button": {
+              "url": "#",
+              "text": "Klick hier!",
+              "target": "_top"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

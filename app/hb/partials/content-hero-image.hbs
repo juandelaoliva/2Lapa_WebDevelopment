@@ -1,0 +1,41 @@
+<section class="content-hero-image {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <div class="hero-image">
+        {{#if content.image_url}}
+            <img src="{{content.image_url}}" alt="{{content.title_main}}" title="{{content.title_main}}">
+        {{/if}}
+    </div>
+    <div class="hero-content-wrapper">
+        <div class="hero-content {{#if content.position}}{{content.position}}{{/if}} {{#if content.text_align}}{{content.text_align}}{{/if}}" {{#if content.width}}style="width: {{content.width}}"{{/if}}>
+            <h1>{{content.title}}</h1>
+            <p>{{{content.text}}}</p>
+            {{#if content.link}}
+                <a href="{{content.link.url}}" title="{{content.link.text}}" {{#if content.link.target}}target="{{content.link.target}}"{{/if}}><span>{{content.link.text}}</span></a>
+            {{/if}}
+        </div>
+    </div>
+</section>
+
+{{!
+
+JSON USAGE:
+
+{
+  "id": "content-hero-image",
+  "optional_classes": "",
+  "type": "content-hero-image",
+  "content": {
+    "position": "left|center|right",
+    "text_align": "text-left|text-center|text-right",
+    "width": "Desired % of the container",
+    "image_url": "http://lorempixel.com/output/people-q-c-1024-500-2.jpg",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "text": "Fusce convallis dolor.",
+    "link": {
+      "text": "Read more",
+      "url": "#",
+      "target": "_top"
+    }
+  }
+}
+
+}}

@@ -1,0 +1,274 @@
+.demo_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: silver;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    width: 100%;
+    border-bottom: 1px solid $black;
+    background-color: $white;
+
+    .logo {
+      width: 240px;
+      height: 60px;
+    }
+  }
+
+  .content {
+    width: 100%;
+    padding-bottom: 25px;
+
+    .titles {
+      padding: 20px;
+    }
+
+    h2, h3 {
+      width: 100%;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    .section__wrapper {
+      position: relative;
+    }
+
+    .section {
+      border: 1px solid $black;
+      margin-bottom: 50px;
+      background-color: $white;
+
+      @extend %grid__container;
+      @extend %grid__container-padding;
+    }
+
+    .element {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: deepskyblue;
+      height: 200px;
+
+      &.element-absolute {
+        background-color: cadetblue;
+        @include font-open-sans-regular;
+        border: 3px solid red;
+      }
+
+      &.element-6 {
+        margin-right: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.element-7,
+      &.element-8,
+      &.element-9,
+      &.element-10,
+      &.element-11,
+      &.element-12 {
+        display: none;
+      }
+
+      @include size-m {
+
+        &.element-6 {
+          margin-right: gutter();
+        }
+
+        &.element-7,
+        &.element-8,
+        &.element-9,
+        &.element-10,
+        &.element-11,
+        &.element-12 {
+          display: flex;
+        }
+      }
+    }
+
+    .section-1 {
+      .element {
+        width: span(1);
+        margin-right: gutter();
+
+        &.element-6 {
+          margin-right: 0;
+        }
+
+        &.element-12 {
+          margin-right: 0;
+        }
+      }
+
+      @include susy-at($grid-12-10-tablet){
+        .element {
+          width: span(1);
+          margin-right: gutter();
+
+          &.element-6 {
+            margin-right: gutter();
+          }
+        }
+      };
+
+      @include susy-at($grid-12-18-desktop){
+        .element {
+          width: span(1);
+          margin-right: gutter();
+
+          &.element-6 {
+            margin-right: gutter();
+          }
+        }
+      };
+    }
+
+    .section-2 {
+      .element {
+        width: span(1);
+        margin-right: gutter();
+
+        &.element-6 {
+          margin-right: 0;
+        }
+
+        &.element-12 {
+          margin-right: 0;
+        }
+      }
+
+      @include susy-at($grid-12-20-tablet){
+        .element {
+          width: span(1);
+          margin-right: gutter();
+
+          &.element-6 {
+            margin-right: gutter();
+          }
+        }
+      };
+
+      @include susy-at($grid-12-30-desktop){
+        .element {
+          width: span(1);
+          margin-right: gutter();
+
+          &.element-6 {
+            margin-right: gutter();
+          }
+        }
+      };
+    }
+
+    .section-absolute {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.5;
+
+      .absolute-1 {
+        width: span(1);
+        margin-right: gutter();
+      }
+
+      .absolute-2 {
+        @include push(2 wide);
+        width: span(2);
+      }
+
+      .absolute-3 {
+        width: span(2);
+        margin-right: gutter();
+      }
+
+      .absolute-4 {
+        width: span(4);
+      }
+
+      @include susy-at($grid-12-10-tablet){
+        .absolute-1 {
+          width: span(2);
+          margin-right: gutter();
+        }
+
+        .absolute-2 {
+          @include push(4 wide);
+          width: span(4);
+        }
+      };
+
+      @include susy-at($grid-12-18-desktop){
+        .absolute-1 {
+          width: span(2);
+          margin-right: gutter();
+        }
+
+        .absolute-2 {
+          @include push(4 wide);
+          width: span(4);
+        }
+      };
+
+      @include susy-at($grid-12-20-tablet){
+        .absolute-3 {
+          width: span(4);
+          margin-right: gutter();
+        }
+
+        .absolute-4 {
+          width: span(8);
+        }
+      };
+
+      @include susy-at($grid-12-30-desktop){
+        .absolute-3 {
+          width: span(4);
+          margin-right: gutter();
+        }
+
+        .absolute-4 {
+          width: span(8);
+        }
+      };
+
+    }
+
+    .typography {
+
+      .font-open-sans-light {
+        @include font-open-sans-light;
+      }
+      .font-open-sans-regular {
+        @include font-open-sans-regular;
+      }
+      .font-open-sans-semibold {
+        @include font-open-sans-semibold;
+      }
+      .font-open-sans-bold {
+        @include font-open-sans-bold;
+      }
+      .font-open-sans-bold-italic {
+        @include font-open-sans-bold-italic;
+      }
+      .font-open-sans-extrabold {
+        @include font-open-sans-extrabold;
+      }
+      .font-open-sans-extrabold-italic {
+        @include font-open-sans-extrabold-italic;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,56 @@
+html {
+  /* Change default typefaces here */
+  font-family: 'Open Sans', sans-serif;
+  @include font-open-sans-light;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Copy & Lists */
+p,
+ul,
+ol {
+  margin-bottom: 1.5rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  /* Change heading typefaces here */
+  margin-bottom: 0;
+  line-height: 1.35;
+}
+
+@mixin heading-light-large {
+  @include font-size(32px);
+  @include size-l {
+    @include font-size(50px);
+  }
+}
+
+@mixin heading-light-medium {
+  @include font-size(26px);
+  @include size-l {
+    @include font-size(40px);
+  }
+}
+
+@mixin heading-bold-italic($size-mobile: 20px, $size-desktop: 24px ) {
+  font-style: italic;
+  font-weight: bold;
+  @include font-size($size-mobile);
+  font-weight: bold;
+  font-style: italic;
+  @include size-l {
+    @include font-size($size-desktop);
+  }
+}
+
+@mixin link-bold($size-mobile: 20px, $size-desktop: 24px ) {
+  font-weight: bold;
+  @include font-size($size-mobile);
+  @include size-l {
+    @include font-size($size-desktop);
+  }
+}

@@ -1,0 +1,159 @@
+.AD19_FeatureTeaser {
+
+  // styles for FeatureTeaser with slider
+  &.has-slider {
+    width: 110%;
+    margin-left: -5%;
+    overflow: hidden;
+
+    @include size-l {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .flexslider {
+      border: none;
+      margin: 0 0 20px;
+
+      @include size-l {
+        width: 900px;
+        margin: 0 auto 10px;
+        overflow: hidden;
+      }
+    }
+
+    // Custom hide of the arrow navigation.
+    .flex-direction-nav {
+      display: none !important;
+
+      // Arrow navigation on desktop
+      @include size-l {
+        display: block !important;
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        top: -250px;
+
+        a {
+          opacity: 1;
+          width: 26px;
+          height: 26px;
+
+          &.flex-prev {
+            left: 0;
+          }
+          &.flex-next {
+            right: 0;
+          }
+
+          &:before {
+            opacity: 1;
+            font-size: 26px;
+          }
+        }
+      }
+    }
+
+    .flex-viewport {
+      width: 300px;
+      margin: 0 auto;
+      overflow: visible !important;
+      position: relative;
+      min-height: 330px;
+
+      @include size-l {
+        padding-bottom: 30px;
+        min-height: 480px;
+      }
+    }
+
+    // Bullet navigation
+    .flex-control-nav {
+      bottom: 0;
+      position: relative;
+    }
+    // adapting the slider bullets
+    .flex-control-paging li a {
+      background-color: transparent !important;
+      border: 2px solid $primary-green-1;
+      opacity: 1;
+      box-shadow: none;
+
+      &.flex-active {
+        background-color: $primary-green-1 !important;
+        width: 11px;
+        height: 11px;
+      }
+    }
+
+    ul {
+      &.slides {
+        display: flex;
+        align-items: stretch;
+
+        img {
+          width: 80px;
+          height: auto;
+
+          @include size-l {
+            width: 150px;
+          }
+        }
+
+        li {
+          @include size-l {
+            // Not using the shorthand version to avoid issues on IE
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0px;
+            max-width: 300px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  // styles for FeatureTeaser without slider
+  &:not(.has-slider) {
+    @extend %grid__container;
+
+    display: flex;
+    justify-content: center;
+
+    @include size-l {
+      padding: 0 5%;
+    }
+
+    .AD19_FeatureTeaser-wrapper {
+      @include size-l {
+        width: 980px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+
+      @include size-l {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      li {
+        width: 45%;
+        margin-bottom: 30px;
+
+        @include size-l {
+          width: span(2 wide);
+          max-width: 290px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}

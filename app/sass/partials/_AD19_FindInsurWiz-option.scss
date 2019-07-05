@@ -1,0 +1,146 @@
+.AD19_FindInsurWiz-option {
+  // Radio buttons
+  // hiding default radio button and making the whole card clickable
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+
+  // styling the radio button
+  .AD19_FindInsurWiz-option-radio {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border: 1px solid $text-blue-main;
+    border-radius: 50%;
+
+    @include size-l {
+      height: 34px;
+      width: 34px;
+      border-width: 2px;
+    }
+
+    // hiding indicator by default
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  // Show the indicator (dot/circle) when checked
+  [type="radio"]:checked ~ .AD19_FindInsurWiz-option-radio:after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $primary-green-1;
+    top: 3px;
+    left: 3px;
+
+    @include size-l {
+      width: 18px;
+      height: 18px;
+      top: 6px;
+      left: 6px;
+    }
+  }
+
+  // Label styles
+  label {
+    @include heading-bold-italic(16px, 24px);
+    @include line-height(22px);
+
+    @include size-l {
+      @include line-height(33px);
+    }
+  }
+
+  // Cards
+  &.step-1 {
+    background-color: $white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24);
+    position: relative;
+    text-align: center;
+    max-width: 150px;
+
+    padding: 25px 10px 32px 10px;
+    margin: 0 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+
+    &:hover {
+      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.32);
+    }
+
+    @include size-l {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.24);
+      max-width: 400px;
+      padding: 60px 10px 40px 10px;
+    }
+
+    // Radio buttons step 1 specific styling
+
+    // positioning the radio button inside the card
+    .AD19_FindInsurWiz-option-radio {
+      top: 11px;
+      left: 11px;
+
+      @include size-l {
+        top: 23px;
+        left: 23px;
+      }
+    }
+
+    img {
+      width: 100px;
+      height: auto;
+
+      margin-bottom: 16px;
+
+      @include size-l {
+        width: 240px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  // Radio list
+  &.step-2 {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 75%;
+    max-width: 350px;
+
+    @include size-m {
+      width: 60%;
+      max-width: inherit;
+    }
+
+    @include size-l {
+      width: 57%;
+    }
+
+    label {
+      padding-left: 30px;
+
+      @include size-l {
+        padding-left: 65px;
+      }
+    }
+  }
+}

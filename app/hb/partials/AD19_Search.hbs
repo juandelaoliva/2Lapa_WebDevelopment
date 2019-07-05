@@ -1,0 +1,52 @@
+<div class="AD19_Search {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <span class="AD19_Search_close_button"></span>
+    <div class="AD19_Search_form_container">
+        <h2>{{content.header}}</h2>
+        <form autocomplete="on" action="#">
+            <div id="search-form">
+            </div>
+        </form>
+
+        <div class="AD19_Search_results_container">
+            <h3>{{content.results_header}}</h3>
+            <div class="AD19_Search_results">
+                {{#each content.freq_searches}}
+                    {{> 'AD19_Search_freqSearch' content=this.content}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{!
+
+Description:
+
+Search button and search form modal.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_Search",
+    "content": {
+        "label": "Suche",
+        "header": "Suche",
+        "placeholder": "Ich suche nach",
+        "results_header": "Oft gesucht",
+        "freq_searches": [
+            {
+                "id": "item_id",
+                "optional_classes": "",
+                "type": "AD19_Search_freqSearch",
+                "content": {
+                    "option_text": ""
+                }
+            },
+            {}, ...
+        ]
+    }
+}
+
+}}

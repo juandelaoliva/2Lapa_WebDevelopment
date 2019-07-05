@@ -1,0 +1,14 @@
+{
+  "pageID": "karriere",
+  "pageTitle": "Karriere",
+  "sections": [
+    {
+      "id": "section-karriere",
+      "optional_classes": "",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "Karriere"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<div class="AD19_ArticleTeaser">
+    <img src="{{image_url}}" alt="{{header}}">
+    <h2>{{category}}</h2>
+    <h3>{{header}}</h3>
+    <div class="AD19_ArticleTeaser__copy">{{{copy_text}}}</div>
+    {{#with button}}
+        <a class="cta" href="{{url}}" {{#if target}}target="{{target}}"{{/if}}>{{text}}</a>
+    {{/with}}
+</div>
+
+{{!
+
+Description:
+
+Article Teaser
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_ArticleTeaser",
+    "content": {
+        "category": "Kategorie",
+        "header": "Lorem ipsum...",
+        "copy_text": "Lorem ipsum...",
+        "image_url": "http://link.to/image",
+        "button": {
+            "url": "http://link.to/content",
+            "text": "Zum Artikel",
+            "target": "_top"
+        }
+    }
+}
+
+}}

@@ -1,0 +1,35 @@
+<div class="AD19_FindInsurWiz-option {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <input type="radio" id="{{content.option_id}}" name="{{step}}" value="{{content.option_id}}">
+    <div class="AD19_FindInsurWiz-option-radio"></div>
+    {{#if content.image_option}}
+        <img class="first-option" src="{{content.image_option}}" alt="{{header}}" title="{{header}}">
+    {{/if}}
+    <label for="{{content.option_id}}">{{{content.option_text}}}</label>
+</div>
+
+{{!
+
+Description:
+
+Find insurance wizard
+
+Individual option for the questionaire.
+
+step says which step the option belongs to.
+final says if this option is final (and should be just one option if final, displayed without radio buttons).
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_FindInsurWiz_option",
+    "content": {
+      "option_id": "",
+      "image_option": "", (optional)
+      "option_text": "",
+      "final": "true"
+    }
+}
+
+}}

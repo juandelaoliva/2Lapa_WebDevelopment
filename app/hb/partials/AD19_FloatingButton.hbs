@@ -1,0 +1,44 @@
+<a
+        class="AD19_FloatingButton {{#if optional_classes}}{{optional_classes}}{{/if}}"
+        {{#if id}}id="{{id}}"{{/if}}
+        href="{{content.url}}"
+>
+    {{#if content.text}}
+        <span>{{content.text}}</span>
+    {{else}}
+        {{> 'responsiveImage/responsiveImage' image=content.image}}
+    {{/if}}
+</a>
+
+{{!
+
+Description:
+
+Floating button
+
+Json usage:
+
+For the icon / text configuration, you should provide the text or the image but not both.
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_FloatingButton",
+      "content": {
+        "image": {
+            "sourcesets": [
+                {
+                    "url": "http://link.to/image",
+                    "media_query": "" (The media query definition)
+                },
+                {}, ...
+            ],
+            "default": {
+                "url": "http://link.to/image"
+            }
+        }, (optional)
+        "text": "Chatbot" (optional)
+      }
+}
+
+}}

@@ -1,0 +1,46 @@
+{
+  "pageID": "AD19_StageTeaser",
+  "pageTitle": "AD19_StageTeaser",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_StageTeaser",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_StageTeaser-example",
+      "optional_classes": "",
+      "type": "AD19_StageTeaser",
+      "content": {
+        "position": "left desktop-right",
+        "text_align": "text-left",
+        "header": "Günstige KFZ Versicherung",
+        "copy_text": "Berechen Sie Ihren individuellen beitrag in nur 3 minuten und sparen sie bis zu 350 €",
+        "link": {
+          "text": "Berechnung starten",
+          "url": "#"
+        },
+        "image": {
+          "sources": [
+            {
+              "url": "/images/assets/header-mobile.png",
+              "media_query": "(max-width: 1023px)"
+            },
+            {
+              "url": "/images/assets/header-desktop.png",
+              "media_query": "(min-width: 1024px)"
+            }
+          ],
+          "default": {
+            "url": "/images/assets/header-desktop.png"
+          }
+        }
+      }
+    }
+  ]
+}

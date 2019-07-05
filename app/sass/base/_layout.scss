@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important; //some browsers overwrite this instruction so it has to be placed as important
+}
+
+// needed for full width container to cover the whole page without scrollbars appearing
+html {
+  overflow-x: hidden;
+}
+
+body {
+  .coco-main__wrapper {
+    max-width: $container-max-width;
+    position: relative;
+    padding: 0 5%;
+    margin: 0 auto;
+
+    @include size-l {
+      padding: 0;
+    }
+  }
+
+  footer {
+    position: relative;
+    padding: 0 5%;
+  }
+}
+
+.order1 {
+  order: 1;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order2 {
+  order: 2;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order3 {
+  order: 3;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order4 {
+  order: 4;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order5 {
+  order: 5;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order6 {
+  order: 6;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order7 {
+  order: 7;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order8 {
+  order: 8;
+  @include size-l {
+    order: 0;
+  }
+}
+
+.order9 {
+  order: 9;
+  @include size-l {
+    order: 0;
+  }
+}
+
+// used as optional class for containers
+.full-width {
+
+  // Calculation does the following:
+  //  - Subtract half of the container’s width from half the viewport’s width.
+  //  - Move the element to the left and right by that amount, thereby stretching the element.
+  //  - The total amount of stretching is 100vw - 100%. That is, the screen width minus the parent’s width.
+  margin: 0 calc(50% - 50vw);
+  
+  // re-adding padding for content plus addition for invisible scrollbar width
+  padding: 0 8%;
+
+  @include size-l {
+    padding: 0;
+  }
+}

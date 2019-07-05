@@ -1,0 +1,54 @@
+{
+  "pageID": "AD19_Search",
+  "pageTitle": "AD19_Search",
+  "sections": [
+    {
+      "id": "section0",
+      "optional_classes": "",
+      "container": "false",
+      "type": "AD19_TextHeadline",
+      "content": {
+        "header": "AD19_Search",
+        "copy_text": "A sample of this component."
+      }
+    },
+    {
+      "id": "AD19_Search-example",
+      "optional_classes": "",
+      "type": "AD19_Search",
+      "content": {
+        "label": "Suche",
+        "optional_classes": "",
+        "placeholder": "Suchbegriff",
+        "results_header": "Oft gesucht",
+        "freq_searches": [
+          {
+            "optional_classes": "arrow-right-blue",
+            "type": "AD19_Search_freqSearch",
+            "content": {
+              "option_text": "Elektronische Versicherungsbestätigung "
+            }
+          },
+          {
+            "optional_classes": "arrow-right-blue",
+            "type": "AD19_Search_freqSearch",
+            "content": {
+              "option_text": "Übernahme der Schadenfreiheitsklasse"
+            }
+          },
+          {
+            "optional_classes": "arrow-right-blue",
+            "type": "AD19_Search_freqSearch",
+            "content": {
+              "option_text": "Beitragszahlung"
+            }
+          }
+        ],
+        "link": {
+          "text": "Berechnung starten",
+          "url": "#"
+        }
+      }
+    }
+  ]
+}
