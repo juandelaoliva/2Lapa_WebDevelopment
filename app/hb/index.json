@@ -42,27 +42,50 @@
           {
             "order": 3,
             "header": "Lore ipsum",
-            "copy_text": "<h3>Tel: 02203 500216</h3><p><strong>Mo - Fr von 08:00 - 20:00 Uhr</strong><br>Im Schadenfall 24 Stunden für Sie da</p>",
-            "icon_url": "/images/assets/icon-profile-white.svg"
+            "copy_text": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+            "icon_url": "/images/assets/generic-icon.svg"
           },
           {
             "order": 1,
-            "header": "Mein AdmiralDirekt",
-            "copy_text": "Jetzt einloggen und persönlich Kontakt aufnehmen",
-            "icon_url": "/images/assets/icon-profile-white.svg",
+            "header": "Lore ipsum",
+            "copy_text": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+            "icon_url": "/images/assets/generic-icon.svg"
           },
           {
             "order": 2,
-            "header": "Chat",
-            "copy_text": "Jetzt hier mit unseren Mitarbeitern in Kontakt treten",
-            "icon_url": "/images/assets/icon-profile-white.svg",
-            "link": {
-              "url": "#",
-              "text": "Chat starten",
-              "type": "link"
-            }
+            "header": "Lore ipsum",
+            "copy_text": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+            "icon_url": "/images/assets/generic-icon.svg"
           }
         ]
+      }
+    },
+    {
+      "id": "00Section_TextAndBlocks",
+      "optional_classes": "",
+      "type": "TextAndBlocks",
+      "content": {
+        "title": "Nulla vestibulum egestas pharetra.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Consectetur adipiscing elit, sed do eiusmod tempor Incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "blocks":{
+          "b1":{
+            "text":"Number of projects",
+            "stat": "70+"
+          },
+          "b2":{
+            "text":"Average increase in user engagement",
+            "stat": "58%"
+          },
+          "b3":{
+            "text":"ROI on our projects",
+            "stat": "59%"
+          },
+          "b4":{
+            "text":"Experts working for you in Cocomore",
+            "stat": "48+"
+          }
+        }
+
       }
     },
     {

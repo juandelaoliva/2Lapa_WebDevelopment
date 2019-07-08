@@ -1,0 +1,65 @@
+<section
+    class="TextAndBlocks {{#if optional_classes}}{{optional_classes}}{{/if}} {{#if content.layout}}{{content.layout}}{{/if}}"
+    {{#if id}}id="{{id}}" {{/if}}>
+    
+    <div class="TextAndBlocks_text">
+        <h2>{{{content.title}}}</h2>
+        <div class="TextAndBlocks_content_copy_text">
+            <p>{{{content.text}}}
+            </p>
+        </div>
+    </div>
+    <div class="TextAndBlocks_blocks">
+        <div class="container">
+            <div class="block_left">
+                <h2>{{{content.blocks.b1.stat}}}</h2>
+                <p>{{{content.blocks.b1.text}}}</p>
+            </div>
+            <div class="block_right">
+                <h2>{{{content.blocks.b2.stat}}}</h2>
+                <p>{{{content.blocks.b2.text}}}</p>
+            </div>
+            <div class="block_left">
+               <h2>{{{content.blocks.b3.stat}}}</h2>
+                <p>{{{content.blocks.b3.text}}}</p>
+            </div>
+            <div class="block_right">
+               <h2>{{{content.blocks.b4.stat}}}</h2>
+                <p>{{{content.blocks.b4.text}}}</p>
+            </div>
+        </div>
+    </div>
+
+   
+</section>
+
+{{!
+
+TextAndBlocks_content_copy_text
+
+Description:
+
+Text/Teaser Combination
+
+layout: the position of the image. If not provided, the image is centered.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AD19_TextTeaserComb",
+    "content": {
+        "image_url": "http://link.to/image",
+        "header": "Lorem ipsum...",
+        "copy_text": "Lorem ipsum...",
+        "layout": "image-left|image-right", (optional)
+        "link": {
+            "text": "Lorem ipsum...",
+            "url": "http://link.to/content",
+            "target": "_top"
+        }
+    }
+}
+
+}}
