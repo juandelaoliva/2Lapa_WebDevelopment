@@ -61,7 +61,7 @@
       }
     },
     {
-      "id": "00Section_TextAndBlocks",
+      "id": "00Section_WhyUs",
       "optional_classes": "",
       "type": "TextAndBlocks",
       "content": {
@@ -86,6 +86,62 @@
           }
         }
 
+      }
+    },
+    {
+      "id": "AD19_TextHeadlineLevel2-no-link",
+      "optional_classes": "",
+      "type": "AD19_TextHeadlineLevel2",
+      "content": {
+        "header": "Portfolio"
+      }
+    },
+    {
+      "id": "Portfolio_1",
+      "optional_classes": "",
+      "type": "Portfolio",
+      "content": {
+        "image_url": "https://dummyimage.com/600x400/000/fff",
+        "category": "Wartung, Inspecktion",
+        "header": "Lectus quam id leo in vitae turpis massa",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "layout": "image-left",
+        "link": {
+          "text": "Read more",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "Portfolio_2",
+      "optional_classes": "",
+      "type": "Portfolio",
+      "content": {
+        "image_url": "https://dummyimage.com/600x400/000/fff",
+        "category": "Wartung, Inspecktion",
+        "header": "Libero volutpat sed cras ornare arcu dui",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "layout": "image-right",
+        "link": {
+          "text": "Read more",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "Portfolio_3",
+      "optional_classes": "",
+      "type": "Portfolio",
+      "content": {
+        "image_url": "https://dummyimage.com/600x400/000/fff",
+        "category": "Wartung, Inspecktion",
+        "header": "Volutpat lacus laoreet non curabitur gravida arcu",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "layout": "image-left",
+        "link": {
+          "text": "Read more",
+          "url": "#"
+        }
       }
     },
     {
@@ -154,7 +210,7 @@
             "copy_text": "Damit fahren Sie sicher!<br>Die wichtigsten Schadensfälle sind abgedeckt",
             "link": {
               "url": "http://example.com",
-              "text": "Klick hier!",
+              "text": "Read more",
               "target": "_top"
             }
           },
@@ -165,7 +221,7 @@
             "badge_text": "Unser Bestseller",
             "link": {
               "url": "http://example.com",
-              "text": "Klick hier!",
+              "text": "Read more",
               "target": "_top"
             }
           },
@@ -175,7 +231,7 @@
             "copy_text": "Der umfassendste Schutz mit vielen Zusatzleistungen",
             "link": {
               "url": "http://example.com",
-              "text": "Klick hier!",
+              "text": "Read more",
               "target": "_top"
             }
           }
@@ -215,7 +271,7 @@
         "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
         "layout": "image-left",
         "link": {
-          "text": "Klick hier!",
+          "text": "Read more",
           "url": "#"
         }
       }
@@ -231,7 +287,7 @@
         "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
         "layout": "image-right",
         "link": {
-          "text": "Klick hier!",
+          "text": "Read more",
           "url": "#"
         }
       }
@@ -247,7 +303,7 @@
         "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
         "layout": "image-left",
         "link": {
-          "text": "Klick hier!",
+          "text": "Read more",
           "url": "#"
         }
       }
@@ -308,7 +364,7 @@
             "image_url": "https://dummyimage.com/350x350/000/fff.png",
             "button": {
               "url": "#",
-              "text": "Klick hier!",
+              "text": "Read more",
               "target": "_top"
             }
           },
@@ -319,7 +375,7 @@
             "image_url": "https://dummyimage.com/350x350/000/fff.png",
             "button": {
               "url": "#",
-              "text": "Klick hier!",
+              "text": "Read more",
               "target": "_top"
             }
           },
@@ -330,7 +386,7 @@
             "image_url": "https://dummyimage.com/350x350/000/fff.png",
             "button": {
               "url": "#",
-              "text": "Klick hier!",
+              "text": "Read more",
               "target": "_top"
             }
           }

@@ -1,0 +1,103 @@
+.Portfolio {
+  @extend %grid__container;
+  @extend %grid__container-padding;
+
+  @include font-size(14px);
+  @include line-height(26px);
+  color: $text-blue-main;
+
+  margin-bottom: 50px;
+
+  width: 335px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include size-l {
+    display: flex;
+    width: 100%;
+  }
+
+  &.image-left {
+    flex-direction: row;
+
+    .Portfolio_image {
+      @include size-l {
+        margin-right: 60px;
+      }
+    }
+  }
+  &.image-right {
+    flex-direction: row-reverse;
+
+    .Portfolio_image {
+      @include size-l {
+        margin-left: 60px;
+      }
+    }
+  }
+
+  h2 {
+    @include heading-bold-italic(20px, 24px);
+    margin-bottom: 16px;
+
+    @include size-l {
+      margin-bottom: 24px;
+    }
+  }
+
+  // Image container.
+  .Portfolio_image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+
+    @include size-l {
+      width: auto;
+    }
+
+    img {
+      border-radius: 5%;
+      width: 260px;
+      height: auto;
+
+      @include size-l {
+        width: 350px;
+        height: auto;
+      }
+    }
+  }
+
+  // Content container.
+  .Portfolio_content {
+    width: 281px;
+    text-align: center;
+
+    @include size-l {
+      text-align: left;
+      width: 50%;
+      max-width: 460px;
+    }
+
+    a.Portfolio_action_link {
+      display: inline-block;
+      color: $primary-green-1;
+      @include font-size(14px);
+      font-weight: bold;
+      text-decoration: none;
+      background: url("../images/assets/icon-arrow_right-green.svg") center left no-repeat;
+      padding-left: 25px;
+    }
+
+    .Portfolio_content_copy_text {
+      margin-bottom: 22px;
+      @include size-l {
+        margin-bottom: 30px;
+        max-width: 400px;
+      }
+    }
+  }
+}
