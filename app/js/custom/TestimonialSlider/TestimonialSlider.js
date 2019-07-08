@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-    $('#AD19_ImageTextSlider-example').flexslider({
+    $('#TestimonialSection').flexslider({
         animation: "slide"
     });
 });

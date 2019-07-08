@@ -1,0 +1,74 @@
+.TestimonialSlide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+
+  @include font-size(14px);
+  @include line-height(20px);
+  color: $text-blue-main;
+
+  padding: 0 span(0.5);
+  margin: 0 auto 20px auto;
+
+  @include size-l {
+    max-width: 867px;
+    margin: 0 auto 25px auto;
+
+    @include font-size(16px);
+    @include line-height(20px);
+  }
+  
+
+  blockquote {
+    text-align: left;
+    @include font-size(15px);
+    @include line-height(25px);
+    quotes: "“" "“";
+    margin-bottom: 30px;
+
+    &:before {
+      content: open-quote;
+    }
+    &:after {
+      content: close-quote;
+    }
+
+    @include size-l {
+      @include font-size(21px);
+      @include line-height(35px);
+      margin-bottom: 43px;
+    }
+  }
+
+  img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    border: 5px solid #fff;
+    box-shadow: 2px 3px 6px -3px rgba(0, 0, 0, 0.35);
+    position: relative;
+
+  float: left;
+  margin-right: 50px;
+  margin-top: 5%;
+    //align-self: center;
+    margin-bottom: 40px;
+
+    max-width: 112px;
+    max-height: 114px;
+
+    @include size-l {
+      margin-bottom: 55px;
+      max-width: 127px;
+      max-height: 129px;
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
+}

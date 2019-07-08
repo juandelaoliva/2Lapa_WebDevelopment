@@ -1,0 +1,47 @@
+<section class="TestimonialSlider flexslider {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+<h2>{{content.title}}</h2>
+    <ul class="slides">
+        {{#each content.slides}}
+            <li>
+                {{! The slide is a partial to be rendered }}
+                {{> 'TestimonialSlide' content=this}}
+
+                {{! The caption, if exists }}
+                {{#if this.caption}}
+                    <p class="flex-caption">{{this.caption}}</p>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</section>
+
+{{!
+
+Description:
+
+Component FlexSlider.
+
+This is the full content version of the slider, allowing html content as part of the slider.
+
+Json usage:
+
+{
+  "id": "section_id",
+  "optional_classes": "",
+  "type": "TestimonialSlider",
+  "content": {
+    "slides": [
+      {
+        "image_url": "http://link.to/image",
+        "image_alt": "Trusted shops guarantee",
+        "quote": "The testiomnial. Without quotation marks!!!",
+        "author": "A. Uthor, City",
+        "position": "KFZ Premium Vollkasko"
+      },
+      {}, ...
+    ]
+  }
+}
+
+}}
+

@@ -170,196 +170,34 @@
         ]
       }
     },
+  
     {
-      "id": "AD19_FactIcons-example",
+      "id": "TestimonialSection",
       "optional_classes": "",
-      "type": "AD19_FactIcons",
+      "type": "TestimonialSlider",
       "content": {
-        "header": "Unsere KFZ Versicherung bietet umfassenden Schutz",
-        "copy_text": "Egal ob Erstwagen oder Zweitwagenversicherung , Kfz-Haftpflicht oder Teilkaskoversicherung: profitieren Sie von dem ausgezeichneten Schutz von AdmiralDirekt.de.",
-        "icons": [
-          {
-            "icon_url": "/images/assets/icon-heart.svg",
-            "header": "Deckungssumme",
-            "copy_text": "100 Millionen Pauschal"
-          },
-          {
-            "icon_url": "/images/assets/icon-heart.svg",
-            "header": "Personenschaden",
-            "copy_text": "Bis zu 15 Millionen"
-          },
-          {
-            "icon_url": "/images/assets/icon-heart.svg",
-            "header": "Kaufpreisentschädigung",
-            "copy_text": "Bis zu 24 monate"
-          },
-          {
-            "icon_url": "/images/assets/icon-heart.svg",
-            "header": "Deckungssumme",
-            "copy_text": "100 Millionen Pauschal"
-          },
-          {
-            "icon_url": "/images/assets/icon-heart.svg",
-            "header": "Deckungssumme",
-            "copy_text": "100 Millionen Pauschal"
-          }
-        ]
-      }
-    },
-    {
-      "id": "AD19_TextHeadlineLevel2-component-graphics-placeholder",
-      "optional_classes": "",
-      "type": "AD19_TextHeadlineLevel2",
-      "content": {
-        "header": "Wir halten jedem Vergleich stand",
-        "copy_text": "Bei uns erhalten Sie exzellenten Versicherungsschutz zu günstigen Preisen. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur."
-      }
-    },
-    {
-      "id": "AD19_TextHeadlineLevel2-unsere-tarife",
-      "optional_classes": "",
-      "type": "AD19_TextHeadlineLevel2",
-      "content": {
-        "header": "Unsere Tarife im Überblick",
-        "copy_text": "Egal ob Erstwagen oder Zweitwagenversicherung, Kfz-Haftpflicht oder Teilkaskoversicherung: profitieren Sie von dem ausgezeichneten Schutz von AdmiralDirekt.de."
-      }
-    },
-    {
-      "id": "AD19_ProductTitleSlider-example",
-      "optional_classes": "",
-      "type": "AD19_ProductTitleSlider",
-      "content": {
-        "slides": [
-          {
-            "image_url": "images/assets/symbol-product-basis.png",
-            "header": "Basis",
-            "copy_text": "Damit fahren Sie sicher!<br>Die wichtigsten Schadensfälle sind abgedeckt",
-            "link": {
-              "url": "http://example.com",
-              "text": "Read more",
-              "target": "_top"
-            }
-          },
-          {
-            "image_url": "images/assets/symbol-product-komfort.png",
-            "header": "Komfort",
-            "copy_text": "Darf es doch etwas mehr sein?<br>75% unserer Kunden wählen den Komfort Tarif.",
-            "badge_text": "Unser Bestseller",
-            "link": {
-              "url": "http://example.com",
-              "text": "Read more",
-              "target": "_top"
-            }
-          },
-          {
-            "image_url": "images/assets/symbol-product-premium.png",
-            "header": "Premium",
-            "copy_text": "Der umfassendste Schutz mit vielen Zusatzleistungen",
-            "link": {
-              "url": "http://example.com",
-              "text": "Read more",
-              "target": "_top"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "AD19_CloseTeaser-example",
-      "optional_classes": "",
-      "type": "AD19_CloseTeaser",
-      "content": {
-        "icon_url": "images/assets/symbol-calculator.png",
-        "copy_text": "Berechen Sie jetzt ihren KFZ Beitrag",
-        "button": {
-          "text": "Zum Tarifrechner",
-          "url": "#"
-        }
-      }
-    },
-    {
-      "id": "AD19_TextHeadlineLevel2-no-link",
-      "optional_classes": "",
-      "type": "AD19_TextHeadlineLevel2",
-      "content": {
-        "header": "Bei uns sind sie richtig",
-        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur."
-      }
-    },
-    {
-      "id": "AD19_TextTeaserComb_1",
-      "optional_classes": "",
-      "type": "AD19_TextTeaserComb",
-      "content": {
-        "image_url": "https://dummyimage.com/600x400/000/fff",
-        "category": "Wartung, Inspecktion",
-        "header": "Flächendeckendes Werkstattnetz mit umfassenden Serviceleistungen",
-        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        "layout": "image-left",
-        "link": {
-          "text": "Read more",
-          "url": "#"
-        }
-      }
-    },
-    {
-      "id": "AD19_TextTeaserComb_2",
-      "optional_classes": "",
-      "type": "AD19_TextTeaserComb",
-      "content": {
-        "image_url": "https://dummyimage.com/600x400/000/fff",
-        "category": "Wartung, Inspecktion",
-        "header": "Bei uns versichern Sie ihren Zweitwagen am günstigsten",
-        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        "layout": "image-right",
-        "link": {
-          "text": "Read more",
-          "url": "#"
-        }
-      }
-    },
-    {
-      "id": "AD19_TextTeaserComb_3",
-      "optional_classes": "",
-      "type": "AD19_TextTeaserComb",
-      "content": {
-        "image_url": "https://dummyimage.com/600x400/000/fff",
-        "category": "Wartung, Inspecktion",
-        "header": "So erreichen Sie uns",
-        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-        "layout": "image-left",
-        "link": {
-          "text": "Read more",
-          "url": "#"
-        }
-      }
-    },
-    {
-      "id": "AD19_ImageTextSlider-example",
-      "optional_classes": "",
-      "type": "AD19_ImageTextSlider",
-      "content": {
+        "title":"Testimonials",
         "slides": [
           {
             "image_url": "https://dummyimage.com/127x129/000/fff.png",
-            "image_alt": "Trusted shops guarantee",
-            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
-            "author": "Benjamin K, Köln",
-            "position": "KFZ Premium Vollkasko"
+            "image_alt": "User Image alt",
+            "quote": "Dictum varius duis at consectetur lorem. Nec ultrices dui sapien eget mi proin sed libero. Donec ultrices tincidunt arcu non sodales neque",
+            "author": "John Doe",
+            "position": "Dolce Gusto CEO"
           },
           {
             "image_url": "https://dummyimage.com/127x129/000/fff.png",
-            "image_alt": "Trusted shops guarantee",
-            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
-            "author": "Benjamin K, Köln",
-            "position": "KFZ Premium Vollkasko"
+            "image_alt": "User Image alt",
+            "quote": "Varius quam quisque id diam vel quam. Malesuada bibendum arcu vitae elementum curabitur vitae nunc",
+            "author": "Jane Doe",
+            "position": "Executive Director IT"
           },
           {
             "image_url": "https://dummyimage.com/127x129/000/fff.png",
-            "image_alt": "Trusted shops guarantee",
-            "quote": "Hier steht ein längeres Zitat über Sehr kompetenten und freundlichen Telefonservice",
-            "author": "Benjamin K, Köln",
-            "position": "KFZ Premium Vollkasko"
+            "image_alt": "User Image alt",
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            "author": "Richard Roe",
+            "position": "Executive Board"
           }
         ]
       }
