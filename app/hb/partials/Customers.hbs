@@ -1,0 +1,43 @@
+<section class="Customers {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <h2>{{content.header}}</h2>
+    <div class="Customers_copy">{{{content.copy_text}}}</div>
+    <ul>
+        {{#each content.icons}}
+            <li>
+                {{#if this.icon_url}}
+                    <img src="{{this.icon_url}}">
+                {{/if}}
+                <h3>{{this.header}}</h3>
+                {{{this.copy_text}}}
+            </li>
+        {{/each}}
+    </ul>
+</section>
+
+{{!
+
+Description:
+
+Facts with icons
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "Customers",
+    "content": {
+        "header": "header text...",
+        "copy_text": "lorem ipsum...",
+        "icons": [
+            {
+                "icon_url": "http://path.to/icon",
+                "header": "100 Millionen Pauschal",
+                "copy_text": "Deckungssumme"
+            },
+            {}, ...
+        ]
+    }
+}
+
+}}

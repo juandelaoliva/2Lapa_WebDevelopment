@@ -145,6 +145,32 @@
       }
     },
     {
+      "id": "00Section_Customers",
+      "optional_classes": "",
+      "type": "Customers",
+      "content": {
+        "header": "Customers who trust us",
+        "icons": [
+          {
+            "icon_url": "/images/assets/logos/Dolce_Gusto.png",
+            "header": "Nescafé Dolce Gusto"
+          },
+          {
+            "icon_url": "/images/assets/logos/Logo_Norma_Group.svg",
+            "header": "Norma Group"
+          },
+          {
+            "icon_url": "/images/assets/logos/Baerenmarke-logo.svg",
+            "header": "Baerenmarke"
+          },
+          {
+            "icon_url": "/images/assets/logos/DMSG.png",
+            "header": "MS-Connect"
+          }
+        ]
+      }
+    },
+    {
       "id": "AD19_FactIcons-example",
       "optional_classes": "",
       "type": "AD19_FactIcons",
