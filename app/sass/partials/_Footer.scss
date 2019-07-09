@@ -1,0 +1,206 @@
+.Footer {
+  background-color: $text-blue-main;
+  color: $text-white-main;
+  padding: 75px 0 80px;
+
+  .Footer_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin: 150px auto 0;
+
+    @include size-l {
+      margin: -30px auto 0;
+    }
+
+    h2 {
+      @include font-open-sans-bold;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      margin-top: 80px;
+    }
+
+    ul {
+      margin-bottom: 0;
+
+      li {
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        margin-top: 20px;
+
+        a {
+          @include font-open-sans-light;
+          color: $text-white-main;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .Footer_content_socials, .Footer_content_awards {
+      width: 100%;
+      > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        li {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .Footer_content_socials {
+      > ul {
+          max-width: 250px;
+          margin: 0 auto;
+
+        > li {
+          margin-top: 0;
+
+          img {
+            height: 35px;
+          }
+        }
+      }
+    }
+
+    .Footer_content_awards {
+      > h2 {
+        margin-bottom: 32px;
+      }
+
+      > .Footer_content_awards-image-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+
+        > a {
+          margin: 0 15px;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .Footer_copyright_text {
+      @include font-open-sans-light;
+      @include font-size(12px);
+      @include line-height(17px);
+      margin: 80px 0;
+
+      > p {
+        margin: 0;
+      }
+    }
+
+    @include size-m {
+      flex-direction: row;
+      align-items: stretch;
+
+      .Footer_content_socials, .Footer_content_awards {
+        $columns: 2;
+        $total_width: 100%;
+        $padding: 5%;
+        width: ($total_width / $columns) - 2*$padding;
+        padding: $padding $padding 0;
+      }
+
+      .Footer_content_socials {
+        order: 0;
+        flex: 0 1 auto;
+        
+        h2 {
+          text-align: center;
+        }
+
+        ul {
+          max-width: 300px;
+        }
+      }
+
+      .Footer_content_links {
+        order: 2;
+        flex: 1 1 auto;
+        padding: 0 5%;
+        text-align: left;
+      }
+
+      .Footer_content_awards {
+        order: 1;
+        flex: 0 1 auto;
+      }
+
+      .Footer_copyright_text {
+        order: 3;
+        flex: 0 1 100%;
+      }
+
+      .Footer_logo {
+        order: 4;
+      }
+
+    }
+
+    @include size-l {
+
+      max-width: $container-max-width;
+
+      // Resetting styles from the previous media query
+      .Footer_content_socials,
+      .Footer_content_links,
+      .Footer_content_awards,
+      .Footer_copyright_text {
+        width: initial;
+        padding: initial;
+        order: inherit; // this is specifically for IE11, since it does not know "initial"
+        order: initial;
+        flex: initial;
+      }
+
+      .Footer_content_socials, .Footer_copyright_text {
+        flex: 0 1 100%;
+      }
+
+      .Footer_content_links,
+      .Footer_content_awards {
+        $columns: 4;
+        $total_width: 100%;
+        $padding: 2.5%;
+        width: ($total_width / $columns) - 2*$padding;
+        padding: 0 $padding;
+      }
+
+      .Footer_content_awards {
+        > .Footer_content_awards-image-wrapper {
+          > a {
+            margin: 0 5px;
+          }
+        }
+      }
+
+      .Footer_logo {
+        margin: 0 auto;
+      }
+    }
+  }
+}
