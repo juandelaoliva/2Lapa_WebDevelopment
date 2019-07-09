@@ -3,9 +3,9 @@
   "pageTitle": "Web Development | Cocomore",
   "sections": [
     {
-      "id": "AD19_StageTeaser-home",
+      "id": "00Section_HeroSection",
       "optional_classes": "",
-      "type": "AD19_StageTeaser",
+      "type": "HeroSection",
       "content": {
         "position": "left desktop-right",
         "text_align": "text-left",
@@ -89,9 +89,9 @@
       }
     },
     {
-      "id": "AD19_TextHeadlineLevel2-no-link",
+      "id": "TextHeadlineLevel2-no-link",
       "optional_classes": "",
-      "type": "AD19_TextHeadlineLevel2",
+      "type": "TextHeadlineLevel2",
       "content": {
         "header": "Portfolio"
       }
@@ -204,9 +204,9 @@
     },
     
     {
-      "id": "AD19_AboutTeaser-home",
+      "id": "AboutTeaser-home",
       "optional_classes": "",
-      "type": "AD19_AboutTeaser",
+      "type": "AboutTeaser",
       "content": {
         "image": {
           "sources": [
@@ -223,10 +223,10 @@
             "url": "https://dummyimage.com/1440x500/e6e6e6/000000.png"
           }
         },
-        "header": "Über Admiral Direkt",
-        "copy_text": "Wer sind wir und was machen wir eigentlich?<br>Erfahren Sie mehr über un Hier steht noch mehr über das, was Admiral Direkt so besonders macht. Am besten noch einige Vorteile.",
+        "header": "We're looking forward to talking to you",
+        "copy_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-          "text": "Lerne uns kennen",
+          "text": "Contact us",
           "url": "#"
         }
       }

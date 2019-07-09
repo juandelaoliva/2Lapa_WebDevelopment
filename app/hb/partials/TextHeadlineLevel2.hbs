@@ -1,0 +1,38 @@
+<section class="TextHeadline {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    {{#if content.header}}
+        <h2>{{{content.header}}}</h2>
+    {{/if}}
+    {{#if content.copy_text}}
+        <div class="TextHeadline__copy">
+            {{{content.copy_text}}}
+        </div>
+    {{/if}}
+    {{#if content.link}}
+        <a class="cta" href="{{content.link.url}}" {{#if content.link.target}}target="{{content.link.target}}"{{/if}}>{{content.link.text}}</a>
+    {{/if}}
+</section>
+
+{{!
+
+Description:
+
+Text with Headline
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "TextHeadlineLevel2",
+    "content": {
+        "header": "Lorem Ipsum",
+        "copy_text": "Lorem Ipsum dolor.",
+        "link": {
+            "text": "link text",
+            "url": "http://link.to/content",
+            "target": "_top"
+        }
+    }
+}
+
+}}

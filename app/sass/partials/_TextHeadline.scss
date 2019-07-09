@@ -1,0 +1,44 @@
+.TextHeadline {
+  @include font-size(16px);
+  @include line-height(28px);
+  color: $text-blue-main;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  margin: 0 auto 48px auto;
+  padding: 40px 0 25px;
+
+  h1, h2 {
+    width: 85%;
+    @include heading-light-medium;
+    @include font-size(32px);
+    @include line-height(42px);
+    margin: 0 auto 24px auto;
+
+    @include size-l {
+      @include font-size(50px);
+      @include line-height(68px);
+      max-width: 70%;
+    }
+  }
+
+  a.cta {
+    @include line-height(20px);
+    color: $text-lightgreen;
+    margin-top: 18px;
+    padding-left: 18px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    //icon
+    background: url('/images/assets/icon-arrow-right-green.svg') left center no-repeat;
+    background-size: 13px 10px;
+  }
+}

@@ -1,0 +1,148 @@
+.HeroSection {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+
+  @include font-size(16px);
+  @include line-height(30px);
+
+  @include size-l {
+    @include font-size(20px);
+    @include line-height(36px);
+  }
+
+  .HeroSection-image {
+    width: 110%;
+    margin-left: -5%;
+
+    @include size-l {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    picture {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-height: 500px;
+    }
+  }
+
+  .HeroSection-content-wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+
+
+    .HeroSection-content {
+      position: relative;
+      display: block;
+      top: 40%;
+      color: $text-blue-main;
+      padding: 0 15px 0 15px;
+      max-width: 290px;
+      
+
+      @include size-l {
+        transform: translateY(0);
+        max-width: 443px;
+        padding: 0 45px 0 45px;
+        top: 15%;
+      }
+
+      h2 {
+        @include heading-bold-italic(35px, 50px);
+        @include line-height(40px);
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        margin-bottom: 10px;
+
+        @include size-l {
+          @include line-height(60px);
+          margin-bottom: 16px;
+        }
+      }
+
+      .HeroSection-content__copy {
+        margin-bottom: 21px;
+
+        @include size-l {
+          margin-bottom: 42px;
+        }
+      }
+
+      // CTA styles
+      a.cta {
+        display: inline-block;
+
+        @include font-size(16px);
+        @include line-height(22px);
+        font-weight: bold;
+        text-decoration: none;
+
+        background-color: $text-lightgreen;
+        color: $white;
+        padding: 12px 40px;
+        position: relative;
+
+        // setting rounded sides
+        border-top-left-radius: 100%1000px;
+        border-bottom-left-radius: 100%1000px;
+        border-top-right-radius: 100%1000px;
+        border-bottom-right-radius: 100%1000px;
+      }
+    }
+
+    .HeroSection-content.left {
+      align-self: flex-start;
+    }
+    .HeroSection-content.center {
+      align-self: center;
+    }
+    .HeroSection-content.right {
+      align-self: flex-end;
+    }
+
+    .HeroSection-content.text-left {
+      text-align: left;
+    }
+    .HeroSection-content.text-center {
+      text-align: center;
+    }
+    .HeroSection-content.text-right {
+      text-align: right;
+    }
+
+    // desktop classes can be optionally added to component
+    // to handle specific positioning for desktop and mobile
+    @include size-l {
+      .HeroSection-content.desktop-left {
+        align-self: flex-start;
+      }
+      .HeroSection-content.desktop-center {
+        align-self: center;
+      }
+      .HeroSection-content.desktop-right {
+        align-self: flex-end;
+      }
+
+      .HeroSection-content.text-desktop-left {
+        text-align: left;
+      }
+      .HeroSection-content.text-desktop-center {
+        text-align: center;
+      }
+      .HeroSection-content.text-desktop-right {
+        text-align: right;
+      }
+    }
+  }
+  margin-bottom: 20px;  
+}

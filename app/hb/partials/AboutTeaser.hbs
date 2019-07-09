@@ -1,0 +1,53 @@
+<section class="AboutTeaser {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <div class="AboutTeaser-image">
+        {{> 'responsiveImage/responsiveImage' image=content.image alt=content.header title=content.header}}
+    </div>
+    <div class="AboutTeaser-content-wrapper">
+        <div class="AboutTeaser-content">
+            <h2>{{content.header}}</h2>
+            <div class="AboutTeaser-content__copy">
+                {{{content.copy_text}}}
+            </div>
+            {{#with content.link}}
+                <a href="{{url}}" {{#if target}}target="{{target}}"{{/if}} title="{{text}}">{{text}}</a>
+            {{/with}}
+        </div>
+    </div>
+</section>
+
+{{!
+
+Description:
+
+About Teaser
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "AboutTeaser",
+    "content": {
+        "image": {
+            "sourcesets": [
+                {
+                    "url": "http://link.to/image",
+                    "media_query": "" (The media query definition)
+                },
+                {}, ...
+            ],
+            "default": {
+                "url": "http://link.to/image"
+            }
+        },
+        "header": "Über Admiral Direkt",
+        "copy_text": "Lorem ipsum dolor sit...",
+        "link": {
+            "text": "Mehr refahren",
+            "url": "http://link.to/somewhere",
+            "target": "_top"
+        }
+    }
+}
+
+}}

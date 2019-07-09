@@ -1,0 +1,55 @@
+<section class="HeroSection {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <div class="HeroSection-image">
+        {{#if content.image}}
+            {{> 'responsiveImage/responsiveImage' image=content.image alt=content.header title=content.header}}
+        {{/if}}
+    </div>
+    <div class="HeroSection-content-wrapper">
+        <div class="HeroSection-content {{#if content.position}}{{content.position}}{{/if}} {{#if content.text_align}}{{content.text_align}}{{/if}}">
+            <h2>{{content.header}}</h2>
+            <div class="HeroSection-content__copy">{{{content.copy_text}}}</div>
+            <a class="cta" href="{{content.link.url}}" {{#if content.link.target}}target="{{content.link.target}}"{{/if}}>{{content.link.text}}</a>
+        </div>
+    </div>
+</section>
+
+{{!
+
+Description:
+The position for the content and the text alignment can optionally be set for mobile and desktop individually.
+Starting from mobile, if only one value gets specified, it will apply to all screen-sizes.
+If the positioning/alignment for desktop should differ, add the desktop value as additional parameter.
+
+Stage Teaser
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "HeroSection",
+    "content": {
+        "position": "left|center|right|desktop-left|desktop-center|desktop-right",
+        "text_align": "text-left|text-center|text-right|text-desktop-left|text-desktop-center|text-desktop-right",
+        "header": "Günstige KFZ Versicherung",
+        "copy_text": "Berechen Sie Ihren...",
+        "link": {
+          "text": "Berechnung starten",
+          "url": "#"
+        },
+        "image": {
+            "sourcesets": [
+                {
+                    "url": "http://link.to/image",
+                    "media_query": "" (The media query definition)
+                },
+                {}, ...
+            ],
+            "default": {
+                "url": "http://link.to/image"
+            }
+        }, (optional)
+    }
+}
+
+}}
