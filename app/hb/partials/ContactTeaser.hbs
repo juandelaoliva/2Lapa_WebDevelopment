@@ -1,0 +1,64 @@
+<section class="ContactTeaser {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <h2>{{{content.header}}}</h2>
+    <ul>
+        {{#each content.tabs}}
+            <li {{#if this.order}}class="order{{order}}"{{/if}}>
+                {{#if this.icon_url}}
+                    <img src="{{this.icon_url}}" alt="{{this.header}}">
+                {{/if}}
+                <h3>{{this.header}}</h3>
+                {{#if this.copy_text}}
+                    <div class="ContactTeaser-copy_text">
+                        {{{this.copy_text}}}
+                    </div>
+                {{/if}}
+                {{#if this.link}}
+                    <a
+                            href="{{this.link.url}}"
+                            {{#if this.link.target}}target="{{this.link.target}}"{{/if}}
+                        {{#if this.link.type}}class="{{this.link.type}}"{{/if}}
+                    >{{this.link.text}}</a>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+    <div class="ContactTeaser-text-destination"></div>
+</section>
+
+{{!
+
+Description:
+
+Contact Teaser
+
+The link.type value will be used for the style of the link, to appear as a link or a button.
+
+The order defines the position of the tab, for mobile version, based on flex order property.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "ContactTeaser",
+    "content": {
+        "header": "Sie haben doch noch...",
+        "tabs": [
+            {
+                "order": 1,
+                "header": "Telefon",
+                "copy_text": "The text under the header...",
+                "icon_url": "http://url.to/icon",
+                "link": {
+                    "url": "http://link.to/content",
+                    "text": "text link...",
+                    "type": "button|link",
+                    "target": "_top"
+                }
+            },
+            {}, ...
+        ]
+    }
+}
+
+}}

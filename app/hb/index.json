@@ -35,7 +35,7 @@
     {
       "id": "00Section_What we do",
       "optional_classes": "",
-      "type": "AD19_ContactTeaser",
+      "type": "ContactTeaser",
       "content": {
         "header": "What we do",
         "tabs": [

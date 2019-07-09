@@ -1,4 +1,4 @@
-.AD19_ContactTeaser {
+.ContactTeaser {
   @extend %grid__container;
   @extend %grid__container-padding;
 
@@ -53,7 +53,7 @@
         }
       }
 
-      .AD19_ContactTeaser-copy_text {
+      .ContactTeaser-copy_text {
         @include font-size(14px);
         @include line-height(26px);
 
