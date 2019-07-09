@@ -18,7 +18,7 @@
         "image": {
           "sources": [
             {
-              "url": "https://trello-attachments.s3.amazonaws.com/54ff5a0c49de12c6dce3bb5c/1600x1067/c6dc2940219033ff9b6620abc72a7b27/background.png",
+              "url": "/images/assets/background.png",
               "media_query": "(max-width: 1023px)"
             },
             {

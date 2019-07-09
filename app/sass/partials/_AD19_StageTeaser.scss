@@ -41,6 +41,7 @@
     position: absolute;
     top: 0;
 
+
     .AD19_StageTeaser-content {
       position: relative;
       display: block;
@@ -48,6 +49,7 @@
       color: $text-blue-main;
       padding: 0 15px 0 15px;
       max-width: 290px;
+      
 
       @include size-l {
         transform: translateY(0);
@@ -142,4 +144,5 @@
       }
     }
   }
+  margin-bottom: 20px;  
 }
