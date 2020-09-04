@@ -10,7 +10,7 @@
   "dependencies": {
     "group-css-media-queries": "^1.4.1",
     "gulp-rename": "^1.4.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "author": "Cocomore AG",
   "license": "MIT",
